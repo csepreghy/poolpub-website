@@ -13,7 +13,7 @@ class BackgroundContainer extends Component {
     arrows: false,
     autoplay: true,
     infinite: true,
-    speed: 1000,
+    speed: 1500,
     fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
