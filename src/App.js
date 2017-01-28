@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
+import BackgroundContainer from './BackgroundContainer';
+import NavBar from './NavBar';
 
 class App extends Component {
+
   render() {
     return (
-      <h1>Hello React :)</h1>
+      <div>
+        <BackgroundContainer />
+        <NavBar />
+      </div>
     );
   }
 }
