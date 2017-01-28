@@ -25,7 +25,7 @@ class BackgroundContainer extends Component {
 
   render() {
     return (
-      <section id="bg-container">
+      <section id="background-slider">
         <Slider {...this.settings}>
           <div className="bg-img-container"><h3><img src="assets/backgrounds/bg1.jpg" /></h3></div>
           <div className="bg-img-container"><h3><img src="assets/backgrounds/bg2.jpg" /></h3></div>

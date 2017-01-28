@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class NavBar extends Component {
   render() {
     return (
-      <div id="navbar-container">
+      <div id="navbar">
         <ul>
           <li>Menu</li>
           <li>Gallery</li>
