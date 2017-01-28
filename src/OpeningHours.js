@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 import Day from './Day';
-import * as TEXT from './text';
+import * as TEXT from './TEXT';
 
 class OpeningHours extends Component {
+
+  TEXT = TEXT.default;
 
   constructor(props) {
     super();
 
   }
-
-  TEXT = TEXT.default;
-
+  
   days = {
     sun: ['S','u','n'],
     mon: ['M','o','n'],

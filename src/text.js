@@ -1,4 +1,31 @@
 const TEXT = {
+  navbar: {
+    menu: {
+      en: "Menu",
+      dk: "Menu"
+    },
+    gallery: {
+      en: "Gallery",
+      dk: ""
+    },
+    contact: {
+      en: "Contact",
+      dk: "Kontakt Os"
+    },
+    aboutUs: {
+      en: "About Us",
+      dk: ""
+    },
+    prices: {
+      en: "Prices",
+      dk: "Priser"
+    },
+    partyRoom: {
+      en: "Party Room",
+      dk: "Selskabslokale"
+
+    }
+  },
   openingHours: {
     en: "Opening Hours",
     dk: "Buta dán szöveg"

@@ -17,8 +17,8 @@ class App extends Component {
     return (
       <div>
         <BackgroundContainer />
-        <NavBar />
-        <OpeningHours lang= { this.state.lang }/>
+        <NavBar lang= { this.state.lang } />
+        <OpeningHours lang= { this.state.lang } />
       </div>
     );
   }
