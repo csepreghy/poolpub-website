@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Slider from 'react-slick';
+import LanguageSwitcher from './LanguageSwitcher';
 
 class BackgroundContainer extends Component {
 
@@ -43,6 +44,7 @@ class BackgroundContainer extends Component {
           <div className="bg-img-container"><h3><img src="assets/backgrounds/bg14.jpg" /></h3></div>
         </Slider>
         <img className="logo" src="assets/logo.png" />
+        <LanguageSwitcher langSwitch={ this.props.langSwitch }/>
       </section>
     );
   }

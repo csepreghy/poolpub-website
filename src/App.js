@@ -11,14 +11,22 @@ class App extends Component {
     this.state = {
       lang: "en"
     }
+
+    this.langSwitch = this.langSwitch.bind(this);
+  }
+
+  langSwitch(e) {
+    let newLang = e.target.id;
+
+    this.setState({lang: newLang});
   }
 
   render() {
     return (
       <div>
-        <BackgroundContainer />
-        <NavBar lang= { this.state.lang } />
-        <OpeningHours lang= { this.state.lang } />
+        <BackgroundContainer langSwitch={ this.langSwitch }/>
+        <NavBar lang={ this.state.lang } />
+        <OpeningHours lang={ this.state.lang } />
       </div>
     );
   }

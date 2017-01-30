@@ -6,7 +6,7 @@ const TEXT = {
     },
     gallery: {
       en: "Gallery",
-      dk: ""
+      dk: "Galleri"
     },
     contact: {
       en: "Contact",
@@ -14,7 +14,7 @@ const TEXT = {
     },
     aboutUs: {
       en: "About Us",
-      dk: ""
+      dk: "Om os"
     },
     prices: {
       en: "Prices",
@@ -28,7 +28,7 @@ const TEXT = {
   },
   openingHours: {
     en: "Opening Hours",
-    dk: "Buta dán szöveg"
+    dk: "Åbningstider"
   },
   days: {
     en: {

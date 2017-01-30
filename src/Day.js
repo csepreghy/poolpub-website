@@ -10,7 +10,7 @@ class Day extends Component {
   render() {
 
     return (
-      <li>
+      <li className="day">
         <ul>
           <li>
             <ul>
@@ -18,6 +18,13 @@ class Day extends Component {
               <li>{ this.props.day[1] }</li>
               <li>{ this.props.day[2] }</li>
             </ul>
+          </li>
+          <li>
+            <span className="time">{ this.props.openingTime }</span>
+          </li>
+          <li><img src="assets/icon-arrow-grey.png" /></li>
+          <li>
+            <span className="time">{ this.props.closingTime }</span>
           </li>
         </ul>
       </li>
