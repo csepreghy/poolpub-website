@@ -41,6 +41,64 @@ const TEXT = {
       sat: ['S','a','t']
     },
     dk: {}
+  },
+  prices: {
+    pricesTitle: {
+      en: "Price List",
+      dk: "Priser"
+    },
+    poolPerHour: {
+      en: "Pool",
+      dk: "Pool, leje pr. time"
+    },
+    snookerPerHour: {
+      en: "Snooker",
+      dk: "Snooker, leje pr. time"
+    },
+    tableTennisPerHour: {
+      en: "Table Tennis",
+      dk: "Bordtennis, leje pr. time"
+    },
+    golfPerHour: {
+      en: "Golf Simulator",
+      dk: "Golfsimulator, leje pr. time (Se også a)	"
+    },
+    huntingPerHour: {
+      en: "Hunting simulator",
+      dk: "Jagtsimulator, leje pr. time"
+    },
+    poolPerHour: {
+      en: "Whatever",
+      dk: "Månedskort, pool og kegle (ej golf og snooker)"
+    },
+    price1: {
+      en: "Dagspris time leje ikke medlem",
+      dk: "Dagspris time leje ikke medlem"
+    },
+    price2: {
+      en: "Dagspris time leje medlem",
+      dk: "Dagspris time leje medlem"
+    },
+    price3: {
+      en: "Aftenspris time leje ikke medlem",
+      dk: "Aftenspris time leje ikke medlem"
+    },
+    price4: {
+      en: "Aftenspris time leje medlem",
+      dk: "Aftenspris time leje medlem"
+    },
+    price5: {
+      en: "Månedskort",
+      dk: "Månedskort"
+    },
+    price6: {
+      en: "Halvårskort",
+      dk: "Halvårskort"
+    },
+    price7: {
+      en: "Årskort",
+      dk: "Årskort"
+    }
   }
 }
 

@@ -11,16 +11,27 @@ body, html {
   overflow-x: hidden;
 }
 
+/* IMPORT FONTS */
+
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+
+/* BASIC SETTINGS */
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Playfair Display';
+}
 
 #the-universe {
   width: 100%;
   height: 100%;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display';
 
   .black-and-white {
-    filter: grayscale(80%);
+    filter: grayscale(85%);
   }
 
   #background-slider {
@@ -96,7 +107,6 @@ body, html {
   }
 
   #opening-hours {
-    font-family: 'Playfair Display';
     width: 100%;
     height: 500px;
     background-color: #fff;
@@ -150,4 +160,75 @@ body, html {
       }
     }
   }
+  #prices {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 20px;
+
+    .divider {
+      width: 800px;
+    }
+
+    #pool-prices {
+      margin-top: 80px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+
+      div.price-img {
+        display: inline-block;
+        position: relative;
+
+        img {
+          width: 500px;
+          border: 6px solid #fff;
+        }
+      }
+
+      div.lists-container {
+
+        display: inline-block;
+        margin-left: 100px;
+        vertical-align: top;
+
+        h3 {
+          position: relative;
+          left: -4px;
+          font-size: 34px;
+          font-weight: 700;
+        }
+
+        ul {
+          position: relative;
+          list-style: none;
+          display: inline-block;
+          text-align: left;
+          line-height: 2;
+        }
+        ul:last-child {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+
+  /*.title-container {
+    position: relative;
+
+    h1 {
+      font-family: 'Yeseva One', cursive;
+      font-weight: 400;
+      font-size: 40px;
+
+      position: absolute;
+
+    }
+
+    img {
+      position: absolute;
+      width: 600px;
+    }
+  }*/
 }
