@@ -23,8 +23,8 @@ class LanguageSwitcher extends Component {
   render() {
     return (
       <div id="language-picker">
-        <span onClick={(e) => { this.props.langSwitch(e); this.flagChange('dk');} }><img className="black-and-white" id="dk" src="assets/dk2.jpg" /></span>
-        <span onClick={(e) => { this.props.langSwitch(e); this.flagChange('en');} }><img id="en" src="assets/uk2.jpg" /></span>
+        <span onClick={(e) => { this.props.langSwitch(e); this.flagChange('dk');} }><img className="black-and-white" id="dk" src="assets/dk.jpg" /></span>
+        <span onClick={(e) => { this.props.langSwitch(e); this.flagChange('en');} }><img id="en" src="assets/uk.jpg" /></span>
       </div>
     );
   }

@@ -3,8 +3,42 @@ import BackgroundContainer from './BackgroundContainer';
 import NavBar from './NavBar';
 import OpeningHours from './OpeningHours';
 import Prices from './Prices';
+import { Router, Route, Link } from 'react-router';
 
 class App extends Component {
+
+  PHOTO_SET = [
+  {
+    src: 'assets/prices-hunting.jpg',
+    width: 681,
+    height: 1024,
+    aspectRatio: 1.5,
+    lightboxImage:{
+    src: 'assets/prices-hunting.jpg',
+    srcset: [
+      'assets/prices-hunting.jpg 1024w',
+      'assets/prices-hunting.jpg 800w',
+      'assets/prices-hunting.jpg 500w',
+      'assets/prices-hunting.jpg 320w',
+    ]
+    }
+  },
+  {
+    src: 'assets/prices-hunting.jpg',
+    width: 600,
+    height: 600,
+    aspectRatio: 1,
+    lightboxImage:{
+    src: 'assets/prices-hunting.jpg',
+    srcset: [
+      'assets/prices-hunting.jpg 1024w',
+      'assets/prices-hunting.jpg 800w',
+      'assets/prices-hunting.jpg 500w',
+      'assets/prices-hunting.jpg 320w',
+    ]
+    }
+  }
+];
 
   constructor(props) {
     super();
@@ -18,7 +52,6 @@ class App extends Component {
 
   langSwitch(e) {
     let newLang = e.target.id;
-
     this.setState({lang: newLang});
   }
 

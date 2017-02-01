@@ -7,5 +7,12 @@ require("../styles/application.scss");
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.js';
+import { Router, Route, browserHistory } from 'react-router';
+import Gallery from './Gallery';
 
-ReactDOM.render(<App />, document.getElementById('the-universe'));
+ReactDOM.render((
+  <Router history={browserHistory}>
+    <Route path="/" component={App} />
+    <Route path="/gallery" component={Gallery} />
+  </Router>
+), document.getElementById('the-universe'));

@@ -12,13 +12,11 @@ class List extends Component {
 
     return (
       <ul>
-        <li>{ TEXT.default.prices.price1[this.props.lang] }</li>
-        <li>{ TEXT.default.prices.price2[this.props.lang] }</li>
-        <li>{ TEXT.default.prices.price3[this.props.lang] }</li>
-        <li>{ TEXT.default.prices.price4[this.props.lang] }</li>
-        <li>{ TEXT.default.prices.price5[this.props.lang] }</li>
-        <li>{ TEXT.default.prices.price6[this.props.lang] }</li>
-        <li>{ TEXT.default.prices.price7[this.props.lang] }</li>
+        {
+          TEXT.default.prices[this.props.type].text[this.props.lang].map(function(item, index) {
+          return <li key={index}>{item}</li>
+          })
+        }
       </ul>
     );
   }

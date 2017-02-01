@@ -47,57 +47,113 @@ const TEXT = {
       en: "Price List",
       dk: "Priser"
     },
-    poolPerHour: {
-      en: "Pool",
-      dk: "Pool, leje pr. time"
+    poolPrices: {
+      title: {
+        en: "Pool",
+        dk: "Pool"
+      },
+      text: {
+        en: [
+          "Dagspris time leje ikke medlem",
+          "Dagspris time leje medlem",
+          "Aftenspris time leje ikke medlem",
+          "Aftenspris time leje medlem",
+          "Månedskort",
+          "Halvårskort",
+          "Årskort"
+        ],
+        dk: [
+          "Dagspris time leje ikke medlem",
+          "Dagspris time leje medlem",
+          "Aftenspris time leje ikke medlem",
+          "Aftenspris time leje medlem",
+          "Månedskort",
+          "Halvårskort",
+          "Årskort"
+        ]
+      },
+      prices: ["80kr","70kr","110kr","85kr","300kr","1500kr","2500kr"]
     },
-    snookerPerHour: {
-      en: "Snooker",
-      dk: "Snooker, leje pr. time"
+    snookerPrices: {
+      title: {
+        en: "Snooker",
+        dk: "Snooker"
+      },
+      text: {
+        en: [
+          "Dagspris time leje ikke medlem",
+          "Dagspris time leje medlem",
+          "Aftenspris time leje ikke medlem",
+          "Aftenspris time leje medlem",
+          "Månedskort",
+          "Halvårskort",
+          "Årskort"
+        ],
+        dk: [
+          "Dagspris time leje ikke medlem",
+          "Dagspris time leje medlem",
+          "Aftenspris time leje ikke medlem",
+          "Aftenspris time leje medlem",
+          "Månedskort",
+          "Halvårskort",
+          "Årskort"
+        ]
+      },
+      prices: ["95kr","85kr","130kr","105kr","400kr","2100kr","3700kr"]
     },
-    tableTennisPerHour: {
-      en: "Table Tennis",
-      dk: "Bordtennis, leje pr. time"
+    golfPrices: {
+      title: {
+        en: "Golf",
+        dk: "Golf"
+      },
+      text: {
+        en: [
+          "Dagspris time leje ikke medlem",
+          "Dagspris time leje medlem",
+          "Aftenspris time leje ikke medlem",
+          "Aftenspris time leje medlem",
+          "Månedskort",
+          "Halvårskort",
+          "Årskort"
+        ],
+        dk: [
+          "Dagspris time leje ikke medlem",
+          "Dagspris time leje medlem",
+          "Aftenspris time leje ikke medlem",
+          "Aftenspris time leje medlem",
+          "Månedskort",
+          "Halvårskort",
+          "Årskort"
+        ]
+      },
+      prices: ["150kr","100kr","200kr","150kr","400kr","2100kr","3700kr"]
     },
-    golfPerHour: {
-      en: "Golf Simulator",
-      dk: "Golfsimulator, leje pr. time (Se også a)	"
-    },
-    huntingPerHour: {
-      en: "Hunting simulator",
-      dk: "Jagtsimulator, leje pr. time"
-    },
-    poolPerHour: {
-      en: "Whatever",
-      dk: "Månedskort, pool og kegle (ej golf og snooker)"
-    },
-    price1: {
-      en: "Dagspris time leje ikke medlem",
-      dk: "Dagspris time leje ikke medlem"
-    },
-    price2: {
-      en: "Dagspris time leje medlem",
-      dk: "Dagspris time leje medlem"
-    },
-    price3: {
-      en: "Aftenspris time leje ikke medlem",
-      dk: "Aftenspris time leje ikke medlem"
-    },
-    price4: {
-      en: "Aftenspris time leje medlem",
-      dk: "Aftenspris time leje medlem"
-    },
-    price5: {
-      en: "Månedskort",
-      dk: "Månedskort"
-    },
-    price6: {
-      en: "Halvårskort",
-      dk: "Halvårskort"
-    },
-    price7: {
-      en: "Årskort",
-      dk: "Årskort"
+    huntingPrices: {
+      title: {
+        en: "Hunting",
+        dk: "Jagt"
+      },
+      text: {
+        en: [
+          "Dagspris time leje ikke medlem",
+          "Dagspris time leje medlem",
+          "Aftenspris time leje ikke medlem",
+          "Aftenspris time leje medlem",
+          "Månedskort",
+          "Halvårskort",
+          "Årskort"
+        ],
+        dk: [
+          "Dagspris time leje ikke medlem",
+          "Dagspris time leje medlem",
+          "Aftenspris time leje ikke medlem",
+          "Aftenspris time leje medlem",
+          "Månedskort",
+          "Halvårskort",
+          "Årskort"
+        ]
+      },
+      prices: ["150kr","100kr","200kr","150kr","400kr","2100kr","3700kr"]
     }
   }
 }
