@@ -15,7 +15,7 @@ class Prices extends Component {
 
   render() {
     return (
-      <div id="prices">
+      <section id="prices" className="block">
         <div className="title-container">
           <h1>{TEXT.default.prices.pricesTitle[this.props.lang]}</h1>
           <img className="divider" src="assets/divider-white.png" />
@@ -32,7 +32,10 @@ class Prices extends Component {
         <PriceBlock img={ "assets/prices-hunting.jpg" }
                     lang={ this.props.lang }
                     type={ "huntingPrices" } />
-      </div>
+        <PriceBlock img={ "assets/tabletennis.jpg" }
+                    lang={ this.props.lang }
+                    type={ "tableTennisPrices" } />
+      </section>
     );
   }
 }

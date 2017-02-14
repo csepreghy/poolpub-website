@@ -154,6 +154,65 @@ const TEXT = {
         ]
       },
       prices: ["150kr","100kr","200kr","150kr","400kr","2100kr","3700kr"]
+    },
+    tableTennisPrices: {
+      title: {
+        en: "Table Tennis",
+        dk: "Bordtennis"
+      },
+      text: {
+        en: [
+          "Dagspris time leje ikke medlem",
+          "Dagspris time leje medlem",
+          "Aftenspris time leje ikke medlem",
+          "Aftenspris time leje medlem",
+          "Månedskort",
+          "Halvårskort",
+          "Årskort"
+        ],
+        dk: [
+          "Dagspris time leje ikke medlem",
+          "Dagspris time leje medlem",
+          "Aftenspris time leje ikke medlem",
+          "Aftenspris time leje medlem",
+          "Månedskort",
+          "Halvårskort",
+          "Årskort"
+        ]
+      },
+      prices: ["80kr","70kr","110kr","85kr","300kr","1500kr","2500kr"]
+    }
+  },
+  partyRoom: {
+    title: {
+      en: "Party Room",
+      dk: "Selskabslokale"
+    },
+    content1: {
+      en: "Du skal holde en fest, en kom sammen, en reunion, – Du skal afholde noget, hvor I kan hygge, have det sjovt og feste! Vi har faciliteterne til at sørge for, at jeres aften bliver den bedste aften! Om I er et selskab på 15 eller på 60, kan vi skræddersy en aften, så den passer jeres selskab perfekt! Ved større selskaber kan vi tilbyde:",
+      dk: "Du skal holde en fest, en kom sammen, en reunion, – Du skal afholde noget, hvor I kan hygge, have det sjovt og feste! Vi har faciliteterne til at sørge for, at jeres aften bliver den bedste aften! Om I er et selskab på 15 eller på 60, kan vi skræddersy en aften, så den passer jeres selskab perfekt! Ved større selskaber kan vi tilbyde:"
+    },
+    contentList: [
+      {
+        en: "Et selskabslokale på 100 m2 inkl. borde, stole, service, køleskab og musik",
+        dk: "Et selskabslokale på 100 m2 inkl. borde, stole, service, køleskab og musik"
+      },
+      {
+        en: "At arrangere alt, det vil sige stå for det hele, herunder serveringspersonale, oprydning, mad, drikkelse, underholdning og musik",
+        dk: "At arrangere alt, det vil sige stå for det hele, herunder serveringspersonale, oprydning, mad, drikkelse, underholdning og musik"
+      },
+      {
+        en: "I står selv for det hele, hvor vi blot sørger for lokalet",
+        dk: "I står selv for det hele, hvor vi blot sørger for lokalet"
+      },
+      {
+        en: "I står for enkelte dele og så står vi for resten.",
+        dk: "I står for enkelte dele og så står vi for resten"
+      }
+    ],
+    content2: {
+      en: "Vi har et samarbejde med en virkelig dygtig kok, hvorfor hvis vi står for maden, ved at det er 110% Lækkert!",
+      dk: "Vi har et samarbejde med en virkelig dygtig kok, hvorfor hvis vi står for maden, ved at det er 110% Lækkert!"
     }
   }
 }

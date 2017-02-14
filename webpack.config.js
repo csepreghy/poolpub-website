@@ -15,14 +15,48 @@ module.exports = {
   module: {
     loaders: [
       {
+          test: /\.jsx?$/,
+          loader: 'babel-loader',
+          exclude: /node_modules/,
+          query: {
+              presets: ['es2015']
+          }
+      },
+      {
         test: /\.js?$/,
         loaders: ['babel'],
         include: path.join(__dirname, 'src')
       },
       {
+       test: /\.png$/,
+       loader: "url-loader?limit=100000"
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'file?name=public/fonts/[name].[ext]'
+      },
+      {
+        test: /\.jpg$/,
+        loader: "file-loader"
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-loader'
+      },
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader"
+      },
+      {
         test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
+        loader: "style-loader!css-loader!sass-loader"
       }
-    ]
-  }
+    ],
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery'
+    })
+  ]
 }

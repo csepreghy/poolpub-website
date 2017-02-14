@@ -13,7 +13,7 @@ class PriceBlock extends Component {
 
   render() {
     return (
-      <section id="pool-prices">
+      <div className="priceblock">
         <div className="price-img">
           <img src={ this.props.img} />
         </div>
@@ -23,7 +23,7 @@ class PriceBlock extends Component {
                 type={ this.props.type }/>
           <PriceList type={ this.props.type }/>
         </div>
-      </section>
+      </div>
     );
   }
 }

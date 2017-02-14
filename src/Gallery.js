@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import { Router, Route, Link } from 'react-router'
-import * as TEXT from './TEXT';
+
 
 class Gallery extends Component {
 
@@ -9,11 +8,32 @@ class Gallery extends Component {
 
   }
 
-  render() {
+  PHOTO_SET = [
+    {
+      src: 'http://example.com/example/img1_small.jpg',
+      width: 681,
+      height: 1024,
+      aspectRatio: 1.5,
+      lightboxImage:{
+      src: 'http://example.com/example/img1_large.jpg',
+      }
+    },
+    {
+      src: 'http://example.com/example/img2_small.jpg',
+      width: 600,
+      height: 600,
+      aspectRatio: 1.5,
+      lightboxImage:{
+      src: 'http://example.com/example/img2_large.jpg',
+      }
+    }
+  ];
 
+  render() {
     return (
-      <h1>Gallery</h1>
+        <div></div>
     );
   }
 }
+
 export default Gallery;

@@ -55,7 +55,7 @@ class OpeningHours extends Component {
     console.log(this.TEXT);
 
     return (
-      <section id="opening-hours">
+      <section id="opening-hours" className="block">
         <h2>{this.TEXT.openingHours[this.props.lang]}</h2>
         <ul className="days-container">
           <Day day={ this.days.sun.letters } openingTime={ this.days.sun.openingTime } closingTime={ this.days.sun.closingTime } />
