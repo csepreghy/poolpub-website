@@ -300,16 +300,20 @@ class Contact extends Component {
               <li>{ this.TEXT.contact.address.title[this.props.lang] }</li>
               <li>{ this.TEXT.contact.phone.title[this.props.lang] }</li>
               <li>{ this.TEXT.contact.email.title[this.props.lang] }</li>
+              <li>{ this.TEXT.contact.facebook.title[this.props.lang] }</li>
+              <li>{ this.TEXT.contact.instagram.title[this.props.lang] }</li>
             </ul>
             <ul className="right-list">
               <li>{ this.TEXT.contact.address.content[this.props.lang] }</li>
               <li>{ this.TEXT.contact.phone.content[this.props.lang] }</li>
-              <li>{ this.TEXT.contact.email.content[this.props.lang] }</li>
+              <li><a href="mailto:poolpub@poolpub.dk?Subject=Hello!">{ this.TEXT.contact.email.content[this.props.lang] }</a></li>
+              <li><a href="https://www.facebook.com/POOL-PUB-Copenhagen-104637576234219/" target="_blank">{ this.TEXT.contact.facebook.content[this.props.lang] }</a></li>
+              <li><a href="https://www.instagram.com/poolpub_cph/" target="_blank">{ this.TEXT.contact.instagram.content[this.props.lang] }</a></li>
             </ul>
           </div>
           <div className="social-media-container">
             <div className="social-icons">
-              
+
             </div>
           </div>
         </div>

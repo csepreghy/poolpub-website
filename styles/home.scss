@@ -146,6 +146,7 @@ h3 {
         display: inline-block;
         margin-left: 20px;
         margin-right: 20px;
+        cursor: pointer;
 
         a {
           color: #fff;
@@ -175,6 +176,26 @@ h3 {
         color: #000;
         border-right: 1px solid #bbb;
 
+        .dash {
+          display: none;
+        }
+
+        @media screen and (max-width: 640px) {
+          .dash {
+            display: inline-block;
+          }
+
+        }
+
+        .day-ending {
+          display: none;
+        }
+        @media screen and (max-width: 640px) {
+          .day-ending {
+            display: inline-block;
+          }
+        }
+
         &:last-child {
           border: none;
         }
@@ -194,16 +215,51 @@ h3 {
               width: 18px;
             }
 
+            @media screen and (max-width: 640px) {
+              &>img {
+                display: none;
+              }
+            }
+
             span.time {
               font-weight: 400;
               font-size: 22px;
               line-height: 4;
             }
           }
+          @media screen and (max-width: 640px) {
+            li {
+              display: inline-block;
+              margin: auto 5px auto 5px;
+
+              ul {
+                li {
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 640px) {
+        li.day {
+          height: 100px;
+          width: 90%;
+          margin: auto;
+          display: block;
+          border-right: none;
+          border-bottom: 1px solid #bbb;
         }
       }
     }
   }
+
+  @media screen and (max-width: 640px) {
+    #opening-hours {
+      height: auto;
+    }
+  }
+
   #prices {
 
     .priceblock {
@@ -264,7 +320,7 @@ h3 {
 
     .party-room-content {
       margin: 40px auto 0 auto;
-      width: 800px;
+      width: 1000px;
       text-align: justify;
 
       ul {
@@ -327,7 +383,7 @@ h3 {
       .list {
         float: left;
         margin-top: 40px;
-        padding: 10px;
+        padding: 20px;
 
         .left-list {
           display: inline-block;

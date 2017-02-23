@@ -255,6 +255,26 @@ const TEXT = {
         en: "poolpub@poolpub.dk",
         dk: "poolpub@poolpub.dk"
       }
+    },
+    facebook: {
+      title: {
+        en: "Facebook:",
+        dk: "Facebook:"
+      },
+      content: {
+        en: "POOL-PUB Copenhagen",
+        dk: "POOL-PUB Copenhagen"
+      }
+    },
+    instagram: {
+      title: {
+        en: "Instagram:",
+        dk: "Instagram:"
+      },
+      content: {
+        en: "poolpub_cph",
+        dk: "poolpub_cph"
+      }
     }
   }
 }

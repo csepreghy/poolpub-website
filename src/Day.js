@@ -17,12 +17,14 @@ class Day extends Component {
               <li>{ this.props.day[0] }</li>
               <li>{ this.props.day[1] }</li>
               <li>{ this.props.day[2] }</li>
+              <li><span className="day-ending">{ this.props.dayEnding }</span></li>
             </ul>
           </li>
           <li>
             <span className="time">{ this.props.openingTime }</span>
           </li>
-          <li><img src="assets/icon-arrow-grey.png" /></li>
+          <li><img className="arrow" src="assets/icon-arrow-grey.png" /></li>
+          <li className="dash">-</li>
           <li>
             <span className="time">{ this.props.closingTime }</span>
           </li>
