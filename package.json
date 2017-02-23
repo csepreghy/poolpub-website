@@ -16,8 +16,8 @@
     "pool",
     "Copenhagen",
     "bar",
-    "reactjs",
-    "webpack"
+    "pub",
+    "Denmark"
   ],
   "author": "Noah-Jerome Lotzer <n.lotzer@neusta.de>",
   "license": "MIT",
@@ -51,7 +51,9 @@
     "react-photo-gallery": "^4.2.16",
     "react-portal": "^3.0.0",
     "react-router": "^3.0.2",
+    "react-scroll-to-component": "^1.0.0",
     "react-slick": "^0.14.5",
+    "scroll-to-element": "^2.0.0",
     "slick-carousel": "^1.6.0",
     "tween.js": "^16.6.0"
   }

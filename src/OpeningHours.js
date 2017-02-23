@@ -51,9 +51,6 @@ class OpeningHours extends Component {
 
   render() {
 
-    console.log(this.props.lang);
-    console.log(this.TEXT);
-
     return (
       <section id="opening-hours" className="block">
         <h2>{this.TEXT.openingHours[this.props.lang]}</h2>

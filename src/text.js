@@ -1,8 +1,8 @@
 const TEXT = {
   navbar: {
-    menu: {
-      en: "Menu",
-      dk: "Menu"
+    openingHours: {
+      en: "Opening Hours",
+      dk: "Opening Hours"
     },
     gallery: {
       en: "Gallery",
@@ -213,6 +213,48 @@ const TEXT = {
     content2: {
       en: "Vi har et samarbejde med en virkelig dygtig kok, hvorfor hvis vi står for maden, ved at det er 110% Lækkert!",
       dk: "Vi har et samarbejde med en virkelig dygtig kok, hvorfor hvis vi står for maden, ved at det er 110% Lækkert!"
+    }
+  },
+  photoGallery: {
+    title: {
+      en: "Photo Gallery",
+      dk: "Gallerier"
+    }
+  },
+  contact: {
+    title: {
+      en: "Contact",
+      dk: "Kontakt"
+    },
+    address: {
+      title: {
+        en: "Address:",
+        dk: "Address:"
+      },
+      content: {
+        en: "Rentemestervej 67, 2400 Copenhagen NV",
+        dk: "Rentemestervej 67, 2400 Copenhagen NV"
+      }
+    },
+    phone: {
+      title: {
+        en: "Phone:",
+        dk: "Phone:"
+      },
+      content: {
+        en: "+45 38 88 00 29",
+        dk: "+45 38 88 00 29"
+      }
+    },
+    email: {
+      title: {
+        en: "Email:",
+        dk: "Email:"
+      },
+      content: {
+        en: "poolpub@poolpub.dk",
+        dk: "poolpub@poolpub.dk"
+      }
     }
   }
 }

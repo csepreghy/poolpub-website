@@ -4,43 +4,14 @@ import NavBar from './NavBar';
 import OpeningHours from './OpeningHours';
 import Prices from './Prices';
 import PartyRoom from './PartyRoom';
-import { Router, Route, Link } from 'react-router';
+import PhotoGallery from './PhotoGallery';
+import Contact from './Contact';
+import SeeMoreButton from './SeeMoreButton';
 import 'bootstrap';
+import scrollToElement from 'scroll-to-element';
+import scrollTo from 'scroll-to';
 
 class App extends Component {
-
-  PHOTO_SET = [
-  {
-    src: 'assets/prices-hunting.jpg',
-    width: 681,
-    height: 1024,
-    aspectRatio: 1.5,
-    lightboxImage:{
-    src: 'assets/prices-hunting.jpg',
-    srcset: [
-      'assets/prices-hunting.jpg 1024w',
-      'assets/prices-hunting.jpg 800w',
-      'assets/prices-hunting.jpg 500w',
-      'assets/prices-hunting.jpg 320w',
-    ]
-    }
-  },
-  {
-    src: 'assets/prices-hunting.jpg',
-    width: 600,
-    height: 600,
-    aspectRatio: 1,
-    lightboxImage:{
-    src: 'assets/prices-hunting.jpg',
-    srcset: [
-      'assets/prices-hunting.jpg 1024w',
-      'assets/prices-hunting.jpg 800w',
-      'assets/prices-hunting.jpg 500w',
-      'assets/prices-hunting.jpg 320w',
-    ]
-    }
-  }
-];
 
   constructor(props) {
     super();
@@ -50,6 +21,8 @@ class App extends Component {
     }
 
     this.langSwitch = this.langSwitch.bind(this);
+    this.seeMoreToggle = this.seeMoreToggle.bind(this);
+    this.scrollTo = this.scrollTo.bind(this);
   }
 
   langSwitch(e) {
@@ -57,15 +30,37 @@ class App extends Component {
     this.setState({lang: newLang});
   }
 
+  seeMoreToggle() {
+    this.refs['gallery'].seeMoreToggle();
+  }
+
+  scrollTo() {
+    console.log(scrollToElement(document.getElementById("opening-hours")));
+    scrollToElement(document.getElementById("opening-hours"), {
+      offset: 0,
+      ease: 'out-bounce',
+      duration: 1500
+    });
+    console.log(scrollTo(500, 1200, {
+      ease: 'out-bounce',
+      duration: 1500
+    }));
+    let elem = document.getElementById('gallery');
+
+    elem.scrollTop = 0;
+  }
+
   render() {
-    console.log(jQuery);
     return (
       <div>
         <BackgroundContainer langSwitch={ this.langSwitch }/>
-        <NavBar lang={ this.state.lang } />
+        <NavBar scrollTo={ this.scrollTo } lang={ this.state.lang } />
         <OpeningHours lang={ this.state.lang } />
         <Prices lang={ this.state.lang } />
         <PartyRoom lang={ this.state.lang } />
+        <PhotoGallery ref="gallery" lang={ this.state.lang } />
+        <SeeMoreButton seeMoreToggle={ this.seeMoreToggle } lang={ this.state.lang }/>
+        <Contact lang={ this.state.lang } />
       </div>
     );
   }
