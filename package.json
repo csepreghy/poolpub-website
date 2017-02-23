@@ -46,14 +46,9 @@
     "react": "^15.2.1",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.2.1",
-    "react-image-slideshow": "^1.5.2",
-    "react-parallax-component": "^1.0.6",
     "react-photo-gallery": "^4.2.16",
     "react-portal": "^3.0.0",
-    "react-router": "^3.0.2",
-    "react-scroll-to-component": "^1.0.0",
     "react-slick": "^0.14.5",
-    "scroll-to-element": "^2.0.0",
     "slick-carousel": "^1.6.0",
     "tween.js": "^16.6.0"
   }
