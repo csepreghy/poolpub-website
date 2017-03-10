@@ -225,11 +225,11 @@ h3 {
       .bar {
         position: relative;
         transform: translateY($bar-spacing);
-        background: rgba(255, 255, 255, 1);
+        background: #D5B752;
         transition: all 0ms 300ms;
 
         &.animate {
-          background: rgba(255, 255, 255, 0);
+          background: rgba(213, 183, 82, 0);
         }
       }
 
@@ -238,7 +238,7 @@ h3 {
         position: absolute;
         left: 0;
         bottom: $bar-spacing;
-        background: rgba(255, 255, 255, 1);
+        background: #D5B752;
         transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
       }
 
@@ -247,7 +247,7 @@ h3 {
         position: absolute;
         left: 0;
         top: $bar-spacing;
-        background: rgba(255, 255, 255, 1);
+        background: #D5B752;
         transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
       }
 
@@ -303,6 +303,18 @@ h3 {
     }
   }
 
+  @media screen and (max-width: $screen-md) {
+    #navbar {
+      ul {
+        li {
+          margin-left: 15px;
+          margin-right: 15px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: $screen-sm) {
     #navbar {
       width: 100vw;
@@ -314,7 +326,7 @@ h3 {
       -moz-transition: opacity .3s;
       transition: opacity .3s ease;
       opacity: 0;
-      z-index: 500;
+      z-index: 10;
 
       ul {
         margin: auto;
@@ -329,10 +341,12 @@ h3 {
 
     #navbar.overlay-hide {
       opacity: 0;
+      z-index: -10;
     }
 
     #navbar.overlay-show {
       opacity: 0.9;
+      z-index: 500;
     }
   }
 

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {TEXT} from './TEXT';
+import { TEXT } from './TEXT';
 import PhotoGallery from './PhotoGallery';
 
 class Contact extends Component {

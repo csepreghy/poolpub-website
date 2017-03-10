@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Gallery from 'react-photo-gallery';
-import {TEXT} from './TEXT';
+import { TEXT } from './TEXT';
 
 class PhotoGallery extends Component {
 

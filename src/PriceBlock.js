@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import List from './List';
 import PriceList from './PriceList';
-import {TEXT} from './TEXT';
+import { TEXT } from './TEXT';
 
 class PriceBlock extends Component {
 

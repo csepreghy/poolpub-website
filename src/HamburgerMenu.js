@@ -1,11 +1,20 @@
 import React, {Component} from 'react';
-import {TEXT} from './TEXT';
+import { TEXT } from './TEXT';
 
 class HamburgerMenu extends Component {
 
   constructor(props) {
     super();
 
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    console.log("scroll");
   }
 
   handleClick = () => {

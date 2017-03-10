@@ -10,6 +10,10 @@ import scrollToElement from 'scroll-to-element';
 import scrollTo from 'scroll-to';
 import HomeScreen from './HomeScreen';
 
+let handleScroll = () => {
+  console.log("scroll");
+}
+
 class App extends Component {
 
   constructor(props) {
@@ -21,6 +25,20 @@ class App extends Component {
 
     this.langSwitch = this.langSwitch.bind(this);
     this.seeMoreToggle = this.seeMoreToggle.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    console.log("scroll");
+    setTimeout(function () {
+      window.addEventListener("scroll", function () {
+        console.log("scroll");
+      }, false);
+    }, 1000);
+  }
+
+  handleScroll() {
+    console.log("scroll");
   }
 
   langSwitch(e) {

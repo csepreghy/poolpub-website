@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {TEXT} from './TEXT';
+import { TEXT } from './TEXT';
 import BackgroundContainer from './BackgroundContainer';
 import HamburgerMenu from './HamburgerMenu';
 import NavBar from './NavBar';
@@ -9,6 +9,12 @@ class HomeScreen extends Component {
   constructor(props) {
     super();
 
+  }
+
+  componentDidMount() {
+    $(window).scroll(function() {
+      console.log("scroll");
+    });
   }
 
   toggleNavigation = () => {

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PriceBlock from './PriceBlock';
-import {TEXT} from './TEXT';
+import { TEXT } from './TEXT';
 
 class Prices extends Component {
 
@@ -8,9 +8,6 @@ class Prices extends Component {
     super();
 
   }
-
-  //<VintageTitle title={ TEXT.default.prices.pricesTitle[this.props.lang] } />
-
 
   render() {
     return (
