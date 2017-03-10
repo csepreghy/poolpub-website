@@ -1,7 +1,11 @@
 $screen-lg: 1200px;
 $screen-md: 940px;
 $screen-sm: 640px;
+$screen-xs: 500px;
 
+$bar-width: 45px;
+$bar-height: 5px;
+$bar-spacing: 12px;
 
 * {
   margin: 0;
@@ -11,9 +15,10 @@ $screen-sm: 640px;
 
 body, html {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #000;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* IMPORT FONTS */
@@ -65,13 +70,25 @@ h3 {
     font-size: 20px;
 
     &:nth-child(odd) {
-      background-color: #fff;
-      color: #000;
+      background-color: #000;
+      color: #fff;
     }
 
     &:nth-child(even) {
-      background-color: #000;
-      color: #fff;
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    .block {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 18px;
+
+      h2 {
+        font-size: 36px !important;
+      }
     }
   }
 
@@ -121,11 +138,27 @@ h3 {
       position: absolute;
       top: 40px;
       right: 40px;
+      z-index: 200;
 
       img {
         cursor: pointer;
         margin-right: 10px;
         width: 40px;
+      }
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      #language-picker {
+        position: absolute;
+        top: 70px;
+        right: 10px;
+
+        img {
+          display: block;
+          cursor: pointer;
+          width: 45px;
+          margin-top: 10px;
+        }
       }
     }
 
@@ -170,10 +203,79 @@ h3 {
 
   }
 
+  #hamburger-menu {
+    display: none;
+
+    .hamburger-menu {
+      position: absolute;
+      top: 35px;
+      right: 35px;
+      width: $bar-width;
+      height: $bar-height + $bar-spacing*2;
+      cursor: pointer;
+      z-index: 501;
+
+    .bar,
+    .bar:after,
+    .bar:before {
+      width: $bar-width;
+      height: $bar-height;
+    }
+
+      .bar {
+        position: relative;
+        transform: translateY($bar-spacing);
+        background: rgba(255, 255, 255, 1);
+        transition: all 0ms 300ms;
+
+        &.animate {
+          background: rgba(255, 255, 255, 0);
+        }
+      }
+
+      .bar:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: $bar-spacing;
+        background: rgba(255, 255, 255, 1);
+        transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      .bar:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: $bar-spacing;
+        background: rgba(255, 255, 255, 1);
+        transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      .bar.animate:after {
+        top: 0;
+        transform: rotate(45deg);
+        transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+      }
+
+      .bar.animate:before {
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    #hamburger-menu {
+      display: block;
+    }
+  }
+
   #navbar {
     width: 100%;
     height: 10vh;
     position: relative;
+    opacity: 1;
 
     ul {
       text-align: center;
@@ -198,6 +300,39 @@ h3 {
           text-decoration: none;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    #navbar {
+      width: 100vw;
+      height: 100vh;
+      background-color: #000;
+      position: absolute;
+      top: 0;
+      -webkit-transition: opacity .3s;
+      -moz-transition: opacity .3s;
+      transition: opacity .3s ease;
+      opacity: 0;
+      z-index: 500;
+
+      ul {
+        margin: auto;
+
+        li {
+          margin: 25px auto 25px auto;
+          display: block;
+          font-size: 22px;
+        }
+      }
+    }
+
+    #navbar.overlay-hide {
+      opacity: 0;
+    }
+
+    #navbar.overlay-show {
+      opacity: 0.9;
     }
   }
 
@@ -234,6 +369,7 @@ h3 {
         }
 
         ul {
+          height: 100%;
           width: 100%;
           text-align: center;
           margin-bottom: 20px;
@@ -264,6 +400,10 @@ h3 {
       height: auto;
       padding-bottom: 0;
 
+      h2 {
+        margin-bottom: 20px;
+      }
+
       ul {
         li.day {
           height: 80px;
@@ -280,6 +420,37 @@ h3 {
           .day-ending {
             display: inline-block;
           }
+
+          ul {
+            margin: 0;
+            li {
+              display: inline-block;
+              margin: auto 5px auto 5px;
+
+              &>img {
+                display: none;
+              }
+
+              ul {
+                li {
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // iPhone 5
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    #opening-hours {
+      ul {
+        li.day {
+          height: 65px;
+
 
           ul {
             li {
@@ -350,7 +521,6 @@ h3 {
   }
 
   @media screen and (max-width: $screen-lg) {
-
     #prices {
 
       .priceblock {
@@ -374,11 +544,9 @@ h3 {
         }
       }
     }
-
   }
 
   @media screen and (max-width: $screen-md) {
-
     #prices {
 
       .priceblock {
@@ -420,11 +588,9 @@ h3 {
         }
       }
     }
-
   }
 
-  @media screen and (max-width: 500px) {
-
+  @media screen and (max-width: $screen-xs) {
     #prices {
 
       .priceblock {
@@ -435,6 +601,27 @@ h3 {
 
         div.lists-container {
           width: 95%;
+          ul {
+            li {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width : 400px) {
+    #prices {
+
+      .priceblock {
+
+        div.lists-container {
+          ul {
+            li {
+              font-size: 16px;
+            }
+          }
         }
       }
     }
@@ -451,6 +638,10 @@ h3 {
     .party-room-img {
       width: 800px;
       margin: auto;
+
+      img {
+        width: 100%;
+      }
     }
 
     .party-room-content {
@@ -461,6 +652,24 @@ h3 {
       ul {
         margin: 20px 0 20px 0;
         padding-left: 40px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-lg) {
+    #partyroom {
+
+      .party-room-content {
+        width: 90%;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-md) {
+    #partyroom {
+
+      .party-room-img {
+        width: 80%;
       }
     }
   }
@@ -553,6 +762,108 @@ h3 {
       li {
         line-height: 2;
         font-size: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-lg) {
+    #contact {
+      .content-container {
+        width: 90%;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-md) {
+    #contact {
+
+      #map {
+        height: 50vh;
+      }
+
+      .content-container {
+        width: 95%;
+
+        .list {
+          float: left;
+          margin-top: 20px;
+          padding: 10px;
+
+          .left-list {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    #contact {
+      .content-container {
+
+        .list {
+          padding: 10px;
+
+          .left-list {
+            margin-right: 10px;
+          }
+
+          ul {
+            li {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-xs) {
+    #contact {
+
+      #map {
+        width: 100%;
+        box-shadow: none;
+      }
+
+      .content-container {
+        width: 100%;
+
+        .list {
+          margin-left: 10px;
+          padding: 5px;
+
+          .left-list {
+            margin-right: 5px;
+          }
+
+          ul {
+            li {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width : 400px) {
+    #contact {
+
+      .content-container {
+        .list {
+          padding: 5px;
+
+          .left-list {
+            margin-right: 5px;
+          }
+
+          ul {
+            li {
+              font-size: 12px;
+            }
+          }
+        }
       }
     }
   }

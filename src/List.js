@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import * as TEXT from './TEXT';
+import {TEXT} from './TEXT';
 
 class List extends Component {
 
@@ -13,7 +13,7 @@ class List extends Component {
     return (
       <ul>
         {
-          TEXT.default.prices[this.props.type].text[this.props.lang].map(function(item, index) {
+          TEXT.prices[this.props.type].text[this.props.lang].map(function(item, index) {
           return <li key={index}>{item}</li>
           })
         }

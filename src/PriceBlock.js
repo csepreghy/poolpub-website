@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import List from './List';
 import PriceList from './PriceList';
-import * as TEXT from './TEXT';
+import {TEXT} from './TEXT';
 
 class PriceBlock extends Component {
 
@@ -18,7 +18,7 @@ class PriceBlock extends Component {
           <img src={ this.props.img} />
         </div>
         <div className="lists-container">
-          <h3>{ TEXT.default.prices[this.props.type].title[this.props.lang] }</h3>
+          <h3>{ TEXT.prices[this.props.type].title[this.props.lang] }</h3>
           <List lang={ this.props.lang }
                 type={ this.props.type }/>
           <PriceList type={ this.props.type }/>

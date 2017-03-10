@@ -1,8 +1,8 @@
-const TEXT = {
+export const TEXT = {
   navbar: {
     openingHours: {
       en: "Opening Hours",
-      dk: "Opening Hours"
+      dk: "Åbningstider"
     },
     gallery: {
       en: "Gallery",
@@ -11,10 +11,6 @@ const TEXT = {
     contact: {
       en: "Contact",
       dk: "Kontakt Os"
-    },
-    aboutUs: {
-      en: "About Us",
-      dk: "Om os"
     },
     prices: {
       en: "Prices",
@@ -31,16 +27,94 @@ const TEXT = {
     dk: "Åbningstider"
   },
   days: {
-    en: {
-      sun: ['S','u','n'],
-      mon: ['M','o','n'],
-      tue: ['T','u','e'],
-      wed: ['W','e','d'],
-      thu: ['T','h','u'],
-      fri: ['F','r','i'],
-      sat: ['S','a','t']
+    en:{
+      sun: {
+        openingTime: "1pm",
+        closingTime: "11:30pm",
+        letters: ['S','u','n'],
+        ending: "day"
+      },
+      mon: {
+        openingTime: "1pm",
+        closingTime: "12pm",
+        letters: ['M','o','n'],
+        ending: "day"
+      },
+      tue: {
+        openingTime: "1pm",
+        closingTime: "12pm",
+        letters: ['T','u','e'],
+        ending: "sday"
+      },
+      wed: {
+        openingTime: "1pm",
+        closingTime: "12pm",
+        letters: ['W','e','d'],
+        ending: "nesday"
+      },
+      thu: {
+        openingTime: "1pm",
+        closingTime: "12pm",
+        letters: ['T','h','u'],
+        ending: "rsday"
+      },
+      fri: {
+        openingTime: "1pm",
+        closingTime: "3am",
+        letters: ['F','r','i'],
+        ending: "day"
+      },
+      sat: {
+        openingTime: "12am",
+        closingTime: "3am",
+        letters: ['S','a','t'],
+        ending: "urday"
+      },
     },
-    dk: {}
+    dk: {
+      sun: {
+        openingTime: "1pm",
+        closingTime: "11:30pm",
+        letters: ['S','ø','n'],
+        ending: "dag"
+      },
+      mon: {
+        openingTime: "1pm",
+        closingTime: "12pm",
+        letters: ['M','a','n'],
+        ending: "dag"
+      },
+      tue: {
+        openingTime: "1pm",
+        closingTime: "12pm",
+        letters: ['T','i','r'],
+        ending: "sdag"
+      },
+      wed: {
+        openingTime: "1pm",
+        closingTime: "12pm",
+        letters: ['O','n','s'],
+        ending: "dag"
+      },
+      thu: {
+        openingTime: "1pm",
+        closingTime: "12pm",
+        letters: ['T','o','r'],
+        ending: "sdag"
+      },
+      fri: {
+        openingTime: "1pm",
+        closingTime: "3am",
+        letters: ['F','r','e'],
+        ending: "dag"
+      },
+      sat: {
+        openingTime: "12am",
+        closingTime: "3am",
+        letters: ['L','ø','r'],
+        ending: "dag"
+      }
+    },
   },
   prices: {
     pricesTitle: {
@@ -54,19 +128,19 @@ const TEXT = {
       },
       text: {
         en: [
-          "Dagspris time leje ikke medlem",
-          "Dagspris time leje medlem",
-          "Aftenspris time leje ikke medlem",
-          "Aftenspris time leje medlem",
-          "Månedskort",
-          "Halvårskort",
-          "Årskort"
+          "Hour rate - day (not member)",
+          "Hour rate - day (member)",
+          "Hour rate - evening (not member)",
+          "Hour rate - evening (member)",
+          "Monthly card (free pool)",
+          "Half a year card (free pool)",
+          "Yearly card (free pool)"
         ],
         dk: [
-          "Dagspris time leje ikke medlem",
-          "Dagspris time leje medlem",
-          "Aftenspris time leje ikke medlem",
-          "Aftenspris time leje medlem",
+          "Dagspris time leje (ikke medlem)",
+          "Dagspris time leje (medlem)",
+          "Aftenspris time leje (ikke medlem)",
+          "Aftenspris time leje (medlem)",
           "Månedskort",
           "Halvårskort",
           "Årskort"
@@ -81,13 +155,13 @@ const TEXT = {
       },
       text: {
         en: [
-          "Dagspris time leje ikke medlem",
-          "Dagspris time leje medlem",
-          "Aftenspris time leje ikke medlem",
-          "Aftenspris time leje medlem",
-          "Månedskort",
-          "Halvårskort",
-          "Årskort"
+          "Hour rate - day (not member)",
+          "Hour rate - day (member)",
+          "Hour rate - evening (not member)",
+          "Hour rate - evening (member)",
+          "Monthly card (free snooker)",
+          "Half a year card (free snooker)",
+          "Yearly card (free snooker)"
         ],
         dk: [
           "Dagspris time leje ikke medlem",
@@ -108,13 +182,13 @@ const TEXT = {
       },
       text: {
         en: [
-          "Dagspris time leje ikke medlem",
-          "Dagspris time leje medlem",
-          "Aftenspris time leje ikke medlem",
-          "Aftenspris time leje medlem",
-          "Månedskort",
-          "Halvårskort",
-          "Årskort"
+          "Hour rate - day (not member)",
+          "Hour rate - day (member)",
+          "Hour rate - evening (not member)",
+          "Hour rate - evening (member)",
+          "Monthly card (free golf)",
+          "Half a year card (free golf)",
+          "Yearly card (free golf)"
         ],
         dk: [
           "Dagspris time leje ikke medlem",
@@ -135,13 +209,13 @@ const TEXT = {
       },
       text: {
         en: [
-          "Dagspris time leje ikke medlem",
-          "Dagspris time leje medlem",
-          "Aftenspris time leje ikke medlem",
-          "Aftenspris time leje medlem",
-          "Månedskort",
-          "Halvårskort",
-          "Årskort"
+          "Hour rate - day (not member)",
+          "Hour rate - day (member)",
+          "Hour rate - evening (not member)",
+          "Hour rate - evening (member)",
+          "Monthly card (free hunting)",
+          "Half a year card (free hunting)",
+          "Yearly card (free hunting)"
         ],
         dk: [
           "Dagspris time leje ikke medlem",
@@ -162,13 +236,13 @@ const TEXT = {
       },
       text: {
         en: [
-          "Dagspris time leje ikke medlem",
-          "Dagspris time leje medlem",
-          "Aftenspris time leje ikke medlem",
-          "Aftenspris time leje medlem",
-          "Månedskort",
-          "Halvårskort",
-          "Årskort"
+          "Hour rate - day (not member)",
+          "Hour rate - day (member)",
+          "Hour rate - evening (not member)",
+          "Hour rate - evening (member)",
+          "Monthly card (free table tennis)",
+          "Half a year card (free table tennis)",
+          "Yearly card (free table tennis)"
         ],
         dk: [
           "Dagspris time leje ikke medlem",
@@ -189,7 +263,7 @@ const TEXT = {
       dk: "Selskabslokale"
     },
     content1: {
-      en: "Du skal holde en fest, en kom sammen, en reunion, – Du skal afholde noget, hvor I kan hygge, have det sjovt og feste! Vi har faciliteterne til at sørge for, at jeres aften bliver den bedste aften! Om I er et selskab på 15 eller på 60, kan vi skræddersy en aften, så den passer jeres selskab perfekt! Ved større selskaber kan vi tilbyde:",
+      en: "If you want to arrange a party, renuion or what ever you want to celebrate Pool-pub can help you with that.",
       dk: "Du skal holde en fest, en kom sammen, en reunion, – Du skal afholde noget, hvor I kan hygge, have det sjovt og feste! Vi har faciliteterne til at sørge for, at jeres aften bliver den bedste aften! Om I er et selskab på 15 eller på 60, kan vi skræddersy en aften, så den passer jeres selskab perfekt! Ved større selskaber kan vi tilbyde:"
     },
     contentList: [
@@ -239,7 +313,7 @@ const TEXT = {
     phone: {
       title: {
         en: "Phone:",
-        dk: "Phone:"
+        dk: "Tlf:"
       },
       content: {
         en: "+45 38 88 00 29",
@@ -278,5 +352,3 @@ const TEXT = {
     }
   }
 }
-
-export default TEXT;

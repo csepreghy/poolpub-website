@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Gallery from 'react-photo-gallery';
-import * as TEXT from './TEXT';
+import {TEXT} from './TEXT';
 
 class PhotoGallery extends Component {
 
@@ -313,7 +313,7 @@ class PhotoGallery extends Component {
     return (
       <section id="gallery" className={ "block " + this.state.heightClassName } style={{ "height": this.state.height }}>
         <div className="row">
-          <h1>{ this.TEXT.photoGallery.title[this.props.lang] }</h1>
+          <h1>{ TEXT.photoGallery.title[this.props.lang] }</h1>
           <img className="divider" src="assets/divider-white.png" />
         </div>
         <div className="gallery-container" style={{ "width": this.state.width }}>

@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import BackgroundContainer from './BackgroundContainer';
-import NavBar from './NavBar';
 import OpeningHours from './OpeningHours';
 import Prices from './Prices';
 import PartyRoom from './PartyRoom';
@@ -10,6 +8,7 @@ import SeeMoreButton from './SeeMoreButton';
 import 'bootstrap';
 import scrollToElement from 'scroll-to-element';
 import scrollTo from 'scroll-to';
+import HomeScreen from './HomeScreen';
 
 class App extends Component {
 
@@ -22,7 +21,6 @@ class App extends Component {
 
     this.langSwitch = this.langSwitch.bind(this);
     this.seeMoreToggle = this.seeMoreToggle.bind(this);
-    this.scrollTo = this.scrollTo.bind(this);
   }
 
   langSwitch(e) {
@@ -34,27 +32,10 @@ class App extends Component {
     this.refs['gallery'].seeMoreToggle();
   }
 
-  scrollTo() {
-    console.log(scrollToElement(document.getElementById("opening-hours")));
-    scrollToElement(document.getElementById("opening-hours"), {
-      offset: 0,
-      ease: 'out-bounce',
-      duration: 1500
-    });
-    console.log(scrollTo(500, 1200, {
-      ease: 'out-bounce',
-      duration: 1500
-    }));
-    let elem = document.getElementById('gallery');
-
-    elem.scrollTop = 0;
-  }
-
   render() {
     return (
       <div>
-        <BackgroundContainer langSwitch={ this.langSwitch }/>
-        <NavBar scrollTo={ this.scrollTo } lang={ this.state.lang } />
+        <HomeScreen lang={ this.state.lang } langSwitch={ this.langSwitch } toggleNavigation={ this.toggleNavigation }/>
         <OpeningHours lang={ this.state.lang } />
         <Prices lang={ this.state.lang } />
         <PartyRoom lang={ this.state.lang } />

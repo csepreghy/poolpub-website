@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import PriceBlock from './PriceBlock';
-import * as TEXT from './TEXT';
-//import VintageTitle from './VintageTitle';
+import {TEXT} from './TEXT';
 
 class Prices extends Component {
 
@@ -17,7 +16,7 @@ class Prices extends Component {
     return (
       <section id="prices" className="block">
         <div className="title-container">
-          <h1>{TEXT.default.prices.pricesTitle[this.props.lang]}</h1>
+          <h1>{TEXT.prices.pricesTitle[this.props.lang]}</h1>
           <img className="divider" src="assets/divider-white.png" />
         </div>
         <PriceBlock img={ "assets/prices-pool.jpg" }

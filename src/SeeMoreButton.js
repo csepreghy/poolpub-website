@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-import * as TEXT from './TEXT';
+import {TEXT} from './TEXT';
 
 
 class SeeMoreButton extends Component {
-
-  TEXT = TEXT.default;
 
   constructor(props) {
     super();

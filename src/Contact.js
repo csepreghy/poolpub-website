@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-import * as TEXT from './TEXT';
+import {TEXT} from './TEXT';
 import PhotoGallery from './PhotoGallery';
 
 class Contact extends Component {
-
-  TEXT = TEXT.default;
 
   constructor(props) {
     super();
@@ -291,24 +289,24 @@ class Contact extends Component {
 
     return (
       <section id="contact" className="block clearfix">
-          <h1>{ this.TEXT.contact.title[this.props.lang] }</h1>
+          <h1>{ TEXT.contact.title[this.props.lang] }</h1>
           <img className="divider" src="assets/divider-black.png" />
         <div className="content-container">
           <div id="map" className="card-3"></div>
           <div className="list card-2">
             <ul className="left-list">
-              <li>{ this.TEXT.contact.address.title[this.props.lang] }</li>
-              <li>{ this.TEXT.contact.phone.title[this.props.lang] }</li>
-              <li>{ this.TEXT.contact.email.title[this.props.lang] }</li>
-              <li>{ this.TEXT.contact.facebook.title[this.props.lang] }</li>
-              <li>{ this.TEXT.contact.instagram.title[this.props.lang] }</li>
+              <li>{ TEXT.contact.address.title[this.props.lang] }</li>
+              <li>{ TEXT.contact.phone.title[this.props.lang] }</li>
+              <li>{ TEXT.contact.email.title[this.props.lang] }</li>
+              <li>{ TEXT.contact.facebook.title[this.props.lang] }</li>
+              <li>{ TEXT.contact.instagram.title[this.props.lang] }</li>
             </ul>
             <ul className="right-list">
-              <li>{ this.TEXT.contact.address.content[this.props.lang] }</li>
-              <li>{ this.TEXT.contact.phone.content[this.props.lang] }</li>
-              <li><a href="mailto:poolpub@poolpub.dk?Subject=Hello!">{ this.TEXT.contact.email.content[this.props.lang] }</a></li>
-              <li><a href="https://www.facebook.com/POOL-PUB-Copenhagen-104637576234219/" target="_blank">{ this.TEXT.contact.facebook.content[this.props.lang] }</a></li>
-              <li><a href="https://www.instagram.com/poolpub_cph/" target="_blank">{ this.TEXT.contact.instagram.content[this.props.lang] }</a></li>
+              <li>{ TEXT.contact.address.content[this.props.lang] }</li>
+              <li>{ TEXT.contact.phone.content[this.props.lang] }</li>
+              <li><a href="mailto:poolpub@poolpub.dk?Subject=Hello!">{ TEXT.contact.email.content[this.props.lang] }</a></li>
+              <li><a href="https://www.facebook.com/POOL-PUB-Copenhagen-104637576234219/" target="_blank">{ TEXT.contact.facebook.content[this.props.lang] }</a></li>
+              <li><a href="https://www.instagram.com/poolpub_cph/" target="_blank">{ TEXT.contact.instagram.content[this.props.lang] }</a></li>
             </ul>
           </div>
           <div className="social-media-container">
