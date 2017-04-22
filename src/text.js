@@ -36,25 +36,25 @@ export const TEXT = {
       },
       mon: {
         openingTime: "1pm",
-        closingTime: "12pm",
+        closingTime: "12am",
         letters: ['M','o','n'],
         ending: "day"
       },
       tue: {
         openingTime: "1pm",
-        closingTime: "12pm",
+        closingTime: "12am",
         letters: ['T','u','e'],
         ending: "sday"
       },
       wed: {
         openingTime: "1pm",
-        closingTime: "12pm",
+        closingTime: "12am",
         letters: ['W','e','d'],
         ending: "nesday"
       },
       thu: {
         openingTime: "1pm",
-        closingTime: "12pm",
+        closingTime: "12am",
         letters: ['T','h','u'],
         ending: "rsday"
       },
@@ -65,7 +65,7 @@ export const TEXT = {
         ending: "day"
       },
       sat: {
-        openingTime: "12am",
+        openingTime: "12pm",
         closingTime: "3am",
         letters: ['S','a','t'],
         ending: "urday"
@@ -80,25 +80,25 @@ export const TEXT = {
       },
       mon: {
         openingTime: "1pm",
-        closingTime: "12pm",
+        closingTime: "12am",
         letters: ['M','a','n'],
         ending: "dag"
       },
       tue: {
         openingTime: "1pm",
-        closingTime: "12pm",
+        closingTime: "12am",
         letters: ['T','i','r'],
         ending: "sdag"
       },
       wed: {
         openingTime: "1pm",
-        closingTime: "12pm",
+        closingTime: "12am",
         letters: ['O','n','s'],
         ending: "dag"
       },
       thu: {
         openingTime: "1pm",
-        closingTime: "12pm",
+        closingTime: "12am",
         letters: ['T','o','r'],
         ending: "sdag"
       },
@@ -109,7 +109,7 @@ export const TEXT = {
         ending: "dag"
       },
       sat: {
-        openingTime: "12am",
+        openingTime: "12pm",
         closingTime: "3am",
         letters: ['L','ø','r'],
         ending: "dag"
@@ -120,6 +120,14 @@ export const TEXT = {
     pricesTitle: {
       en: "Price List",
       dk: "Priser"
+    },
+    membership: {
+      en: "(Membership - 50kr)",
+      dk: "(Medlemskab - 50kr)"
+    },
+    evening: {
+      en: "Evening after 17:00",
+      dk: "Aften efter kl. 17:00"
     },
     poolPrices: {
       title: {
@@ -141,9 +149,9 @@ export const TEXT = {
           "Dagspris time leje (medlem)",
           "Aftenspris time leje (ikke medlem)",
           "Aftenspris time leje (medlem)",
-          "Månedskort",
-          "Halvårskort",
-          "Årskort"
+          "Månedskort (fri pool)",
+          "Halvårskort (fri pool)",
+          "Årskort (fri pool)"
         ]
       },
       prices: ["80kr","70kr","110kr","85kr","300kr","1500kr","2500kr"]
@@ -168,9 +176,9 @@ export const TEXT = {
           "Dagspris time leje medlem",
           "Aftenspris time leje ikke medlem",
           "Aftenspris time leje medlem",
-          "Månedskort",
-          "Halvårskort",
-          "Årskort"
+          "Månedskort (fri snooker / pool)",
+          "Halvårskort (fri snooker / pool)",
+          "Årskort (fri snooker / pool)"
         ]
       },
       prices: ["95kr","85kr","130kr","105kr","400kr","2100kr","3700kr"]
@@ -195,9 +203,9 @@ export const TEXT = {
           "Dagspris time leje medlem",
           "Aftenspris time leje ikke medlem",
           "Aftenspris time leje medlem",
-          "Månedskort",
-          "Halvårskort",
-          "Årskort"
+          "Månedskort (fri golf)",
+          "Halvårskort (fri golf)",
+          "Årskort (fri golf)"
         ]
       },
       prices: ["150kr","100kr","200kr","150kr","400kr","2100kr","3700kr"]
@@ -222,9 +230,9 @@ export const TEXT = {
           "Dagspris time leje medlem",
           "Aftenspris time leje ikke medlem",
           "Aftenspris time leje medlem",
-          "Månedskort",
-          "Halvårskort",
-          "Årskort"
+          "Månedskort (fri jagt)",
+          "Halvårskort (fri jagt)",
+          "Årskort (fri jagt)"
         ]
       },
       prices: ["150kr","100kr","200kr","150kr","400kr","2100kr","3700kr"]

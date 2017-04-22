@@ -1,5 +1,6 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   devtool: 'eval',
@@ -8,7 +9,7 @@ module.exports = {
     './src/index.js'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
     publicPath: '/build/'
   },
@@ -24,7 +25,7 @@ module.exports = {
       },
       {
         test: /\.js?$/,
-        loaders: ['babel'],
+        loaders: ['babel-loader'],
         include: path.join(__dirname, 'src')
       },
       {
@@ -47,9 +48,16 @@ module.exports = {
         test: /\.css$/,
         loader: "style-loader!css-loader"
       },
+      // {
+      //   test: /\.scss$/,
+      //   loaders: ["style-loader", "css-loader", "sass-loader"]
+      // }
       {
-        test: /\.scss$/,
-        loader: "style-loader!css-loader!sass-loader"
+       test: /\.scss$/,
+       use: ExtractTextPlugin.extract({
+         fallback: 'style-loader',
+         use: ['css-loader', 'sass-loader'],
+       })
       }
     ],
   },
@@ -57,6 +65,7 @@ module.exports = {
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       $: 'jquery'
-    })
+    }),
+    new ExtractTextPlugin("styles.css")
   ]
 }

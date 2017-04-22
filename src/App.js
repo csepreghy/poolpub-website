@@ -5,14 +5,9 @@ import PartyRoom from './PartyRoom';
 import PhotoGallery from './PhotoGallery';
 import Contact from './Contact';
 import SeeMoreButton from './SeeMoreButton';
-import 'bootstrap';
-import scrollToElement from 'scroll-to-element';
-import scrollTo from 'scroll-to';
 import HomeScreen from './HomeScreen';
+import DesignedByAndrew from './DesignedByAndrew';
 
-let handleScroll = () => {
-  console.log("scroll");
-}
 
 class App extends Component {
 
@@ -20,25 +15,11 @@ class App extends Component {
     super();
 
     this.state = {
-      lang: "en"
+      lang: "dk"
     }
 
     this.langSwitch = this.langSwitch.bind(this);
     this.seeMoreToggle = this.seeMoreToggle.bind(this);
-    this.handleScroll = this.handleScroll.bind(this);
-  }
-
-  componentDidMount() {
-    console.log("scroll");
-    setTimeout(function () {
-      window.addEventListener("scroll", function () {
-        console.log("scroll");
-      }, false);
-    }, 1000);
-  }
-
-  handleScroll() {
-    console.log("scroll");
   }
 
   langSwitch(e) {
@@ -60,6 +41,7 @@ class App extends Component {
         <PhotoGallery ref="gallery" lang={ this.state.lang } />
         <SeeMoreButton seeMoreToggle={ this.seeMoreToggle } lang={ this.state.lang }/>
         <Contact lang={ this.state.lang } />
+        <DesignedByAndrew />
       </div>
     );
   }

@@ -6,15 +6,6 @@ class HamburgerMenu extends Component {
   constructor(props) {
     super();
 
-    this.handleScroll = this.handleScroll.bind(this);
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll() {
-    console.log("scroll");
   }
 
   handleClick = () => {

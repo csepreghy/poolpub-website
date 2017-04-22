@@ -11,12 +11,6 @@ class HomeScreen extends Component {
 
   }
 
-  componentDidMount() {
-    $(window).scroll(function() {
-      console.log("scroll");
-    });
-  }
-
   toggleNavigation = () => {
     $('.bar').toggleClass('animate');
     let elem = document.getElementById('navbar');

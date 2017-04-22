@@ -15,6 +15,8 @@ class Prices extends Component {
         <div className="title-container">
           <h1>{TEXT.prices.pricesTitle[this.props.lang]}</h1>
           <img className="divider" src="assets/divider-white.png" />
+          <span>{ TEXT.prices.membership[this.props.lang] }</span>
+          <span>{ TEXT.prices.evening[this.props.lang] }</span>
         </div>
         <PriceBlock img={ "assets/prices-pool.jpg" }
                     lang={ this.props.lang }

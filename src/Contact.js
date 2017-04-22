@@ -288,7 +288,7 @@ class Contact extends Component {
   render() {
 
     return (
-      <section id="contact" className="block clearfix">
+      <section id="contact" name="contact" className="block clearfix">
           <h1>{ TEXT.contact.title[this.props.lang] }</h1>
           <img className="divider" src="assets/divider-black.png" />
         <div className="content-container">

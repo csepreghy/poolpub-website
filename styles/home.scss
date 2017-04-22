@@ -27,6 +27,7 @@ body, html {
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Yeseva+One');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
 /* BASIC SETTINGS */
 
 h1 {
@@ -37,6 +38,10 @@ h1 {
 
 h3 {
   margin: 0 auto 0 auto;
+}
+
+a {
+  color: #62A5DC;
 }
 
 .clearfix:after {
@@ -207,7 +212,7 @@ h3 {
     display: none;
 
     .hamburger-menu {
-      position: absolute;
+      position: fixed;
       top: 35px;
       right: 35px;
       width: $bar-width;
@@ -489,6 +494,10 @@ h3 {
 
   #prices {
 
+    span {
+      display: block;
+    }
+
     .priceblock {
       margin-top: 80px;
       margin-left: auto;
@@ -516,6 +525,7 @@ h3 {
           left: -4px;
           font-size: 34px;
           font-weight: 700;
+          white-space: nowrap;
         }
 
         ul {
@@ -946,5 +956,37 @@ h3 {
     -ms-transition: height 1s ease-in;
     transition: height 1s ease-in;
     height: auto;
+  }
+
+  #designedby {
+    padding: 4px;
+    h3 {
+      color: #fff;
+      font-family: 'Roboto Light', sans-serif;
+      font-weight: 400 !important;
+      font-size: 18px;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    #designedby {
+      padding: 2px;
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-xs) {
+    #designedby {
+      padding: 2px;
+      h3 {
+        font-size: 12px;
+      }
+    }
   }
 }
