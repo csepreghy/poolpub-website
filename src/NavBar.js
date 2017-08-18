@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { TEXT } from './TEXT';
-import { Link } from 'react-router';
 import TWEEN from 'tween.js';
 
 class NavBar extends Component {

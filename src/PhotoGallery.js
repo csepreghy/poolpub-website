@@ -8,21 +8,10 @@ class PhotoGallery extends Component {
     super();
 
     this.state = {
-      width: "0px",
-      fullHeight: true,
-      heightClassName: "h-100vh"
     }
-
-    this.seeMoreToggle = this.seeMoreToggle.bind(this);
-    this.setAutoHeight = this.setAutoHeight.bind(this);
   }
 
   componentDidMount() {
-    this.setState({ width: "80vw" });
-  }
-
-  setAutoHeight() {
-    this.setState({ heightClassName: "auto" });
   }
 
   seeMoreToggle() {
@@ -311,13 +300,10 @@ class PhotoGallery extends Component {
 
   render() {
     return (
-      <section id="gallery" className={ "block " + this.state.heightClassName } style={{ "height": this.state.height }}>
-        <div className="row">
-          <h1>{ TEXT.photoGallery.title[this.props.lang] }</h1>
-          <img className="divider" src="assets/divider-white.png" />
-        </div>
+      <section id="gallery" className="block ">
         <div className="gallery-container" style={{ "width": this.state.width }}>
-          <Gallery photos={ this.PHOTO_SET }/>
+          { /* <Gallery photos={ this.PHOTO_SET }/> */ }
+          <div className="open-gallery-btn">{ TEXT.photoGallery.openGalleryBtn[this.props.lang] }</div>
         </div>
       </section>
     );

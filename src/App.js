@@ -4,7 +4,6 @@ import Prices from './Prices';
 import PartyRoom from './PartyRoom';
 import PhotoGallery from './PhotoGallery';
 import Contact from './Contact';
-import SeeMoreButton from './SeeMoreButton';
 import HomeScreen from './HomeScreen';
 import DesignedByAndrew from './DesignedByAndrew';
 
@@ -19,16 +18,11 @@ class App extends Component {
     }
 
     this.langSwitch = this.langSwitch.bind(this);
-    this.seeMoreToggle = this.seeMoreToggle.bind(this);
   }
 
   langSwitch(e) {
     let newLang = e.target.id;
     this.setState({lang: newLang});
-  }
-
-  seeMoreToggle() {
-    this.refs['gallery'].seeMoreToggle();
   }
 
   render() {
@@ -39,7 +33,6 @@ class App extends Component {
         <Prices lang={ this.state.lang } />
         <PartyRoom lang={ this.state.lang } />
         <PhotoGallery ref="gallery" lang={ this.state.lang } />
-        <SeeMoreButton seeMoreToggle={ this.seeMoreToggle } lang={ this.state.lang }/>
         <Contact lang={ this.state.lang } />
         <DesignedByAndrew />
       </div>

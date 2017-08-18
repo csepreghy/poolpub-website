@@ -301,6 +301,10 @@ export const TEXT = {
     title: {
       en: "Photo Gallery",
       dk: "Gallerier"
+    },
+    openGalleryBtn: {
+      en: "Open Gallery",
+      dk: "Open Gallery"
     }
   },
   contact: {
