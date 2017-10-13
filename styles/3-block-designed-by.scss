@@ -1,0 +1,31 @@
+#designedby {
+  padding: 4px;
+  h3 {
+    color: #fff;
+    font-family: 'Roboto Light', sans-serif;
+    font-weight: 400 !important;
+    font-size: 18px;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  #designedby {
+    padding: 2px;
+    h3 {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-xs) {
+  #designedby {
+    padding: 2px;
+    h3 {
+      font-size: 12px;
+    }
+  }
+}

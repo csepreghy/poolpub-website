@@ -1,0 +1,136 @@
+#opening-hours {
+  height: 500px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+
+  ul {
+    width: 100%;
+
+    li.day {
+      font-size: 20px;
+      display: inline-block;
+      width: calc(100%/7);
+      height: 300px;
+      color: #000;
+      border-right: 1px solid #bbb;
+
+      .dash {
+        display: none;
+      }
+
+      .day-ending {
+        display: none;
+      }
+
+      &:last-child {
+        border: none;
+      }
+
+      ul {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+
+        li {
+          width: auto;
+          height: auto;
+          display: block;
+          border: none;
+
+          &>img {
+            width: 18px;
+          }
+
+          span.time {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 4;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  #opening-hours {
+    height: auto;
+    padding-bottom: 0;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      li.day {
+        height: 80px;
+        width: 90%;
+        margin: auto;
+        display: block;
+        border-right: none;
+        border-bottom: 1px solid #bbb;
+
+        .dash {
+          display: inline-block;
+        }
+
+        .day-ending {
+          display: inline-block;
+        }
+
+        ul {
+          margin: 0;
+          li {
+            display: inline-block;
+            margin: auto 5px auto 5px;
+
+            &>img {
+              display: none;
+            }
+
+            ul {
+              li {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// iPhone 5
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  #opening-hours {
+    ul {
+      li.day {
+        height: 65px;
+
+
+        ul {
+          li {
+            display: inline-block;
+            margin: auto 5px auto 5px;
+
+            &>img {
+              display: none;
+            }
+
+            ul {
+              li {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

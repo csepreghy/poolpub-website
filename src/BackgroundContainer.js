@@ -10,15 +10,16 @@ class BackgroundContainer extends Component {
   }
 
   settings = {
-    dots: false,
-    arrows: false,
+    dots: true,
+    arrows: true,
     autoplay: true,
     infinite: true,
     speed: 2000,
+    autoplaySpeed: 2500,
     fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    lazyLoad: true,
+    lazyLoad: false,
     pauseOnHover: false,
     swipe: false,
     adaptiveHeight: false
@@ -42,6 +43,7 @@ class BackgroundContainer extends Component {
           <div className="bg-img-container"><h3><img src="assets/backgrounds/bg12.jpg" /></h3></div>
           <div className="bg-img-container"><h3><img src="assets/backgrounds/bg13.jpg" /></h3></div>
           <div className="bg-img-container"><h3><img src="assets/backgrounds/bg14.jpg" /></h3></div>
+          <div className="bg-img-container"><h3><img src="assets/backgrounds/bg15.jpg" /></h3></div>
         </Slider>
         <img className="logo" src="assets/logo.png" />
         <LanguageSwitcher langSwitch={ this.props.langSwitch }/>

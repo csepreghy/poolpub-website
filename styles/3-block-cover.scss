@@ -1,0 +1,125 @@
+#background-slider {
+  width: 100%;
+  position: relative;
+  height: 90vh;
+  font-size: 0;
+
+  .bg-img-container, .slick-slider, .slick-list, .slick-track {
+    height: 100%;
+  }
+
+  .slick-next {
+    right: 50px;
+    z-index: 300;
+  }
+
+  .slick-prev {
+    left: 50px;
+    z-index: 300;
+  }
+
+  .slick-dots {
+    bottom: 10px;
+
+    li {
+      button:before {
+        color: #fff;
+        line-height: 25px;
+        width: 25px;
+        height: 25px;
+        font-size: 8px;
+      }
+    }
+  }
+
+  .bg-img-container {
+
+    h3 {
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  #language-picker {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 200;
+
+    img {
+      cursor: pointer;
+      margin-right: 10px;
+      width: 40px;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    #language-picker {
+      position: absolute;
+      top: 70px;
+      right: 10px;
+
+      img {
+        display: block;
+        cursor: pointer;
+        width: 45px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 150px;
+
+  }
+}
+
+@media screen and (max-width: $screen-lg) {
+
+  #background-slider {
+    height: 60vh;
+
+    .logo {
+      left: 40px;
+      top: 40px;
+      width: 100px;
+    }
+  }
+
+}
+
+@media screen and (max-width: $screen-md) {
+
+  #background-slider {
+    height: 400px;
+
+    .logo {
+      left: 20px;
+      top: 20px;
+      width: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #background-slider {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #background-slider {
+    height: 240px;
+  }
+}

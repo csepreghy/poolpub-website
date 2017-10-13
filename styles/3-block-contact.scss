@@ -1,0 +1,157 @@
+#contact {
+  background-color: #fff;
+  color: #000;
+
+  #map {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .row {
+    margin-bottom: 40px;
+    padding: 0 40px 0 40px;
+  }
+
+  .content-container {
+    width: 70vw;
+    margin: 40px auto 0 auto;
+
+    .list {
+      float: left;
+      margin-top: 40px;
+      padding: 20px;
+
+      .left-list {
+        display: inline-block;
+        text-align: left;
+        list-style: none;
+        margin-right: 40px;
+      }
+
+      .right-list {
+        display: inline-block;
+        text-align: left;
+        list-style: none;
+      }
+    }
+
+    .social-media-container {
+      margin-top: 20px;
+
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      line-height: 2;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-lg) {
+  #contact {
+    .content-container {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  #contact {
+
+    #map {
+      height: 50vh;
+    }
+
+    .content-container {
+      width: 95%;
+
+      .list {
+        float: left;
+        margin-top: 20px;
+        padding: 10px;
+
+        .left-list {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  #contact {
+    .content-container {
+
+      .list {
+        padding: 10px;
+
+        .left-list {
+          margin-right: 10px;
+        }
+
+        ul {
+          li {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-xs) {
+  #contact {
+
+    #map {
+      width: 100%;
+      box-shadow: none;
+    }
+
+    .content-container {
+      width: 100%;
+
+      .list {
+        margin-left: 10px;
+        padding: 5px;
+
+        .left-list {
+          margin-right: 5px;
+        }
+
+        ul {
+          li {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 400px) {
+  #contact {
+
+    .content-container {
+      .list {
+        padding: 5px;
+
+        .left-list {
+          margin-right: 5px;
+        }
+
+        ul {
+          li {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
