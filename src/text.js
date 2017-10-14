@@ -263,6 +263,82 @@ export const TEXT = {
         ]
       },
       prices: ["80kr","70kr","110kr","85kr","300kr","1500kr","2500kr"]
+    },
+    specialOffersTitle: {
+      en: "Special OFfers",
+      dk: "Special Offers"
+    },
+    package1: {
+      title: {
+        en: "Package 1",
+        dk: "Package 1"
+      },
+      list: {
+        en: [
+          '2 Pints of Beer',
+          '1 Bottle of Gajol',
+          '2 Hours of Pool'
+        ],
+        dk: [
+          '2 Kasser Øl',
+          '1 Flaske Gajol',
+          '2 Timers Pool'
+        ]
+      },
+      price: {
+        en: '1600kr',
+        dk: '1600kr'
+      }
+    },
+    package2: {
+      title: {
+        en: "Package 2",
+        dk: "Package 2"
+      },
+      list: {
+        en: [
+          '1 Bottle of Drink',
+          '1 Pint of Beer',
+          '10 Shots',
+          '1 Hour of Hunging/Golf'
+        ],
+        dk: [
+          '1 Flaske Sprut',
+          '1 Kasse Øl',
+          '10 Shots',
+          '1 Times Jagt/Golf'
+        ]
+      },
+      price: {
+        en: '1300kr',
+        dk: '1300kr'
+      }
+    },
+    package3: {
+      title: {
+        en: "Package 3",
+        dk: "Package 3"
+      },
+      list: {
+        en: [
+          '1 Beer Tower',
+          '2 Bag of Chips',
+          '2 Hours of Pool',
+          '1 Nachos',
+          '4 Cocktails'
+        ],
+        dk: [
+          '1 Øl Tårn',
+          '2 Skåle Chips',
+          '2 Timers Pool',
+          '1 Nachos',
+          '4 Cocktails'
+        ]
+      },
+      price: {
+        en: '650kr',
+        dk: '650kr'
+      }
     }
   },
   partyRoom: {

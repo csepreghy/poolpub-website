@@ -21,14 +21,16 @@ class PhotoGallery extends Component {
 
   render() {
     return (
-      <section id="gallery" className="block" style={{"background-image": "url('assets/gallery-background3.jpg')"}} >
+      <section id="gallery" className="block" style={{'backgroundImage': 'url("assets/gallery-background3.jpg")'}} >
         <div className="gallery-container" style={{ 'width': this.state.width }}>
           <div className="gallery-modal" style={{'display': this.state.isGalleryVisible ? 'block' : 'none'}}>
             <Gallery photos={ PHOTO_SET } cols={8}/>
           </div>
           <div onClick={ this.toggleGallery } 
                className="close-gallery-btn" 
-               style={{'display': this.state.isGalleryVisible ? 'block' : 'none'}}><img src="assets/close.png" /></div>
+               style={{'display': this.state.isGalleryVisible ? 'block' : 'none'}}>
+            <img src="assets/close.png" />
+          </div>
           <div onClick={ this.toggleGallery } className="open-gallery-btn">{ TEXT.photoGallery.openGalleryBtn[this.props.lang] }</div>
         </div>
       </section>

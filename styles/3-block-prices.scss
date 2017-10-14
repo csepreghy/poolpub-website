@@ -47,7 +47,55 @@
           }
         }
       }
-  
+
+      .special-offers-title-container {
+        margin-top: 40px;
+      }
+      
+      .packages-container {
+        width: 90%;
+        margin: 40px auto 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .frame-1 {
+          height: 300px;
+          background: url('/assets/frame-1.png');
+        }
+
+        .frame-2 {
+          height: 345px;
+          background: url('/assets/frame-2.png');
+        }
+
+        .frame-3 {
+          height: 375px;
+          background: url('/assets/frame-3.png');
+        }
+
+        .package {
+          width: 300px;
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          padding-top: 55px;
+
+          &-title {
+            margin-bottom: 20px;
+          }
+
+          ul {
+            line-height: 2;
+            list-style: none;
+            li {
+              
+            }
+          }
+        }
+      }
+
     }
   
     @media screen and (max-width: $screen-lg) {

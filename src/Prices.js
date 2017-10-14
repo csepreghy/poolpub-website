@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PriceBlock from './PriceBlock';
+import Package from './Package.js';
 import { TEXT } from './TEXT';
 
 class Prices extends Component {
@@ -33,6 +34,21 @@ class Prices extends Component {
         <PriceBlock img={ "assets/tabletennis.jpg" }
                     lang={ this.props.lang }
                     type={ "tableTennisPrices" } />
+        <div className="special-offers-title-container">
+          <h1>{TEXT.prices.specialOffersTitle[this.props.lang]}</h1>
+          <img className="divider" src="assets/divider-white.png" />
+        </div>
+        <div className="packages-container">
+          <Package packageLabels={ TEXT.prices.package1 }
+                   lang={ this.props.lang } 
+                   frameClass={ 'frame-1' } />
+          <Package packageLabels={ TEXT.prices.package2 }
+                   lang={ this.props.lang } 
+                   frameClass={ 'frame-2' } />
+          <Package packageLabels={ TEXT.prices.package3 }
+                   lang={ this.props.lang }
+                   frameClass={ 'frame-3' } />
+        </div>
       </section>
     );
   }
