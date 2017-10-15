@@ -33,10 +33,6 @@ class BackgroundContainer extends Component {
       this.imageUrls.push("assets/backgrounds/bg" + i + ".jpg")
     }
   }
-
-  getBackgroundImages() {
-    
-  }
  
   render() {
     return (
