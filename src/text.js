@@ -1,277 +1,277 @@
 export const TEXT = {
   navbar: {
     openingHours: {
-      en: "Opening Hours",
-      dk: "Åbningstider"
+      en: 'Opening Hours',
+      dk: 'Åbningstider'
     },
     gallery: {
-      en: "Gallery",
-      dk: "Galleri"
+      en: 'Gallery',
+      dk: 'Galleri'
     },
     contact: {
-      en: "Contact",
-      dk: "Kontakt Os"
+      en: 'Contact',
+      dk: 'Kontakt Os'
     },
     prices: {
-      en: "Prices",
-      dk: "Priser"
+      en: 'Prices',
+      dk: 'Priser'
     },
     partyRoom: {
-      en: "Party Room",
-      dk: "Selskabslokale"
+      en: 'Party Room',
+      dk: 'Selskabslokale'
 
     }
   },
   openingHours: {
-    en: "Opening Hours",
-    dk: "Åbningstider"
+    en: 'Opening Hours',
+    dk: 'Åbningstider'
   },
   days: {
     en:{
       sun: {
-        openingTime: "1pm",
-        closingTime: "11:30pm",
+        openingTime: '1pm',
+        closingTime: '11:30pm',
         letters: ['S','u','n'],
-        ending: "day"
+        ending: 'day'
       },
       mon: {
-        openingTime: "1pm",
-        closingTime: "12am",
+        openingTime: '1pm',
+        closingTime: '12am',
         letters: ['M','o','n'],
-        ending: "day"
+        ending: 'day'
       },
       tue: {
-        openingTime: "1pm",
-        closingTime: "12am",
+        openingTime: '1pm',
+        closingTime: '12am',
         letters: ['T','u','e'],
-        ending: "sday"
+        ending: 'sday'
       },
       wed: {
-        openingTime: "1pm",
-        closingTime: "12am",
+        openingTime: '1pm',
+        closingTime: '12am',
         letters: ['W','e','d'],
-        ending: "nesday"
+        ending: 'nesday'
       },
       thu: {
-        openingTime: "1pm",
-        closingTime: "12am",
+        openingTime: '1pm',
+        closingTime: '12am',
         letters: ['T','h','u'],
-        ending: "rsday"
+        ending: 'rsday'
       },
       fri: {
-        openingTime: "1pm",
-        closingTime: "3am",
+        openingTime: '1pm',
+        closingTime: '3am',
         letters: ['F','r','i'],
-        ending: "day"
+        ending: 'day'
       },
       sat: {
-        openingTime: "12pm",
-        closingTime: "3am",
+        openingTime: '12pm',
+        closingTime: '3am',
         letters: ['S','a','t'],
-        ending: "urday"
+        ending: 'urday'
       },
     },
     dk: {
       sun: {
-        openingTime: "1pm",
-        closingTime: "11:30pm",
+        openingTime: '1pm',
+        closingTime: '11:30pm',
         letters: ['S','ø','n'],
-        ending: "dag"
+        ending: 'dag'
       },
       mon: {
-        openingTime: "1pm",
-        closingTime: "12am",
+        openingTime: '1pm',
+        closingTime: '12am',
         letters: ['M','a','n'],
-        ending: "dag"
+        ending: 'dag'
       },
       tue: {
-        openingTime: "1pm",
-        closingTime: "12am",
+        openingTime: '1pm',
+        closingTime: '12am',
         letters: ['T','i','r'],
-        ending: "sdag"
+        ending: 'sdag'
       },
       wed: {
-        openingTime: "1pm",
-        closingTime: "12am",
+        openingTime: '1pm',
+        closingTime: '12am',
         letters: ['O','n','s'],
-        ending: "dag"
+        ending: 'dag'
       },
       thu: {
-        openingTime: "1pm",
-        closingTime: "12am",
+        openingTime: '1pm',
+        closingTime: '12am',
         letters: ['T','o','r'],
-        ending: "sdag"
+        ending: 'sdag'
       },
       fri: {
-        openingTime: "1pm",
-        closingTime: "3am",
+        openingTime: '1pm',
+        closingTime: '3am',
         letters: ['F','r','e'],
-        ending: "dag"
+        ending: 'dag'
       },
       sat: {
-        openingTime: "12pm",
-        closingTime: "3am",
+        openingTime: '12pm',
+        closingTime: '3am',
         letters: ['L','ø','r'],
-        ending: "dag"
+        ending: 'dag'
       }
-    },
+    }
   },
   prices: {
     pricesTitle: {
-      en: "Price List",
-      dk: "Priser"
+      en: 'Price List',
+      dk: 'Priser'
     },
     membership: {
-      en: "(Membership - 50kr)",
-      dk: "(Medlemskab - 50kr)"
+      en: '(Membership - 50kr)',
+      dk: '(Medlemskab - 50kr)'
     },
     evening: {
-      en: "Evening after 17:00",
-      dk: "Aften efter kl. 17:00"
+      en: 'Evening after 17:00',
+      dk: 'Aften efter kl. 17:00'
     },
     poolPrices: {
       title: {
-        en: "Pool",
-        dk: "Pool"
+        en: 'Pool',
+        dk: 'Pool'
       },
       text: {
         en: [
-          "Hour rate - day (not member)",
-          "Hour rate - day (member)",
-          "Hour rate - evening (not member)",
-          "Hour rate - evening (member)",
-          "Monthly card (free pool)",
-          "Half a year card (free pool)",
-          "Yearly card (free pool)"
+          'Hour rate - day (not member)',
+          'Hour rate - day (member)',
+          'Hour rate - evening (not member)',
+          'Hour rate - evening (member)',
+          'Monthly card (free pool)',
+          'Half a year card (free pool)',
+          'Yearly card (free pool)'
         ],
         dk: [
-          "Dagspris time leje (ikke medlem)",
-          "Dagspris time leje (medlem)",
-          "Aftenspris time leje (ikke medlem)",
-          "Aftenspris time leje (medlem)",
-          "Månedskort (fri pool)",
-          "Halvårskort (fri pool)",
-          "Årskort (fri pool)"
+          'Dagspris time leje (ikke medlem)',
+          'Dagspris time leje (medlem)',
+          'Aftenspris time leje (ikke medlem)',
+          'Aftenspris time leje (medlem)',
+          'Månedskort (fri pool)',
+          'Halvårskort (fri pool)',
+          'Årskort (fri pool)'
         ]
       },
-      prices: ["80kr","70kr","110kr","85kr","300kr","1500kr","2500kr"]
+      prices: ['80kr','70kr','110kr','85kr','300kr','1500kr','2500kr']
     },
     snookerPrices: {
       title: {
-        en: "Snooker",
-        dk: "Snooker"
+        en: 'Snooker',
+        dk: 'Snooker'
       },
       text: {
         en: [
-          "Hour rate - day (not member)",
-          "Hour rate - day (member)",
-          "Hour rate - evening (not member)",
-          "Hour rate - evening (member)",
-          "Monthly card (free snooker)",
-          "Half a year card (free snooker)",
-          "Yearly card (free snooker)"
+          'Hour rate - day (not member)',
+          'Hour rate - day (member)',
+          'Hour rate - evening (not member)',
+          'Hour rate - evening (member)',
+          'Monthly card (free snooker)',
+          'Half a year card (free snooker)',
+          'Yearly card (free snooker)'
         ],
         dk: [
-          "Dagspris time leje ikke medlem",
-          "Dagspris time leje medlem",
-          "Aftenspris time leje ikke medlem",
-          "Aftenspris time leje medlem",
-          "Månedskort (fri snooker / pool)",
-          "Halvårskort (fri snooker / pool)",
-          "Årskort (fri snooker / pool)"
+          'Dagspris time leje ikke medlem',
+          'Dagspris time leje medlem',
+          'Aftenspris time leje ikke medlem',
+          'Aftenspris time leje medlem',
+          'Månedskort (fri snooker / pool)',
+          'Halvårskort (fri snooker / pool)',
+          'Årskort (fri snooker / pool)'
         ]
       },
-      prices: ["95kr","85kr","130kr","105kr","400kr","2100kr","3700kr"]
+      prices: ['95kr','85kr','130kr','105kr','400kr','2100kr','3700kr']
     },
     golfPrices: {
       title: {
-        en: "Golf",
-        dk: "Golf"
+        en: 'Golf',
+        dk: 'Golf'
       },
       text: {
         en: [
-          "Hour rate - day (not member)",
-          "Hour rate - day (member)",
-          "Hour rate - evening (not member)",
-          "Hour rate - evening (member)",
-          "Monthly card (free golf)",
-          "Half a year card (free golf)",
-          "Yearly card (free golf)"
+          'Hour rate - day (not member)',
+          'Hour rate - day (member)',
+          'Hour rate - evening (not member)',
+          'Hour rate - evening (member)',
+          'Monthly card (free golf)',
+          'Half a year card (free golf)',
+          'Yearly card (free golf)'
         ],
         dk: [
-          "Dagspris time leje ikke medlem",
-          "Dagspris time leje medlem",
-          "Aftenspris time leje ikke medlem",
-          "Aftenspris time leje medlem",
-          "Månedskort (fri golf)",
-          "Halvårskort (fri golf)",
-          "Årskort (fri golf)"
+          'Dagspris time leje ikke medlem',
+          'Dagspris time leje medlem',
+          'Aftenspris time leje ikke medlem',
+          'Aftenspris time leje medlem',
+          'Månedskort (fri golf)',
+          'Halvårskort (fri golf)',
+          'Årskort (fri golf)'
         ]
       },
-      prices: ["150kr","100kr","200kr","150kr","400kr","2100kr","3700kr"]
+      prices: ['150kr','100kr','200kr','150kr','400kr','2100kr','3700kr']
     },
     huntingPrices: {
       title: {
-        en: "Hunting",
-        dk: "Jagt"
+        en: 'Hunting',
+        dk: 'Jagt'
       },
       text: {
         en: [
-          "Hour rate - day (not member)",
-          "Hour rate - day (member)",
-          "Hour rate - evening (not member)",
-          "Hour rate - evening (member)",
-          "Monthly card (free hunting)",
-          "Half a year card (free hunting)",
-          "Yearly card (free hunting)"
+          'Hour rate - day (not member)',
+          'Hour rate - day (member)',
+          'Hour rate - evening (not member)',
+          'Hour rate - evening (member)',
+          'Monthly card (free hunting)',
+          'Half a year card (free hunting)',
+          'Yearly card (free hunting)'
         ],
         dk: [
-          "Dagspris time leje ikke medlem",
-          "Dagspris time leje medlem",
-          "Aftenspris time leje ikke medlem",
-          "Aftenspris time leje medlem",
-          "Månedskort (fri jagt)",
-          "Halvårskort (fri jagt)",
-          "Årskort (fri jagt)"
+          'Dagspris time leje ikke medlem',
+          'Dagspris time leje medlem',
+          'Aftenspris time leje ikke medlem',
+          'Aftenspris time leje medlem',
+          'Månedskort (fri jagt)',
+          'Halvårskort (fri jagt)',
+          'Årskort (fri jagt)'
         ]
       },
-      prices: ["150kr","100kr","200kr","150kr","400kr","2100kr","3700kr"]
+      prices: ['150kr','100kr','200kr','150kr','400kr','2100kr','3700kr']
     },
     tableTennisPrices: {
       title: {
-        en: "Table Tennis",
-        dk: "Bordtennis"
+        en: 'Table Tennis',
+        dk: 'Bordtennis'
       },
       text: {
         en: [
-          "Hour rate - day (not member)",
-          "Hour rate - day (member)",
-          "Hour rate - evening (not member)",
-          "Hour rate - evening (member)",
-          "Monthly card (free table tennis)",
-          "Half a year card (free table tennis)",
-          "Yearly card (free table tennis)"
+          'Hour rate - day (not member)',
+          'Hour rate - day (member)',
+          'Hour rate - evening (not member)',
+          'Hour rate - evening (member)',
+          'Monthly card (free table tennis)',
+          'Half a year card (free table tennis)',
+          'Yearly card (free table tennis)'
         ],
         dk: [
-          "Dagspris time leje ikke medlem",
-          "Dagspris time leje medlem",
-          "Aftenspris time leje ikke medlem",
-          "Aftenspris time leje medlem",
-          "Månedskort",
-          "Halvårskort",
-          "Årskort"
+          'Dagspris time leje ikke medlem',
+          'Dagspris time leje medlem',
+          'Aftenspris time leje ikke medlem',
+          'Aftenspris time leje medlem',
+          'Månedskort',
+          'Halvårskort',
+          'Årskort'
         ]
       },
-      prices: ["80kr","70kr","110kr","85kr","300kr","1500kr","2500kr"]
+      prices: ['80kr','70kr','110kr','85kr','300kr','1500kr','2500kr']
     },
     specialOffersTitle: {
-      en: "Special OFfers",
-      dk: "Special Offers"
+      en: 'Special OFfers',
+      dk: 'Special Offers'
     },
     package1: {
       title: {
-        en: "Package 1",
-        dk: "Package 1"
+        en: 'Package 1',
+        dk: 'Package 1'
       },
       list: {
         en: [
@@ -292,8 +292,8 @@ export const TEXT = {
     },
     package2: {
       title: {
-        en: "Package 2",
-        dk: "Package 2"
+        en: 'Package 2',
+        dk: 'Package 2'
       },
       list: {
         en: [
@@ -316,8 +316,8 @@ export const TEXT = {
     },
     package3: {
       title: {
-        en: "Package 3",
-        dk: "Package 3"
+        en: 'Package 3',
+        dk: 'Package 3'
       },
       list: {
         en: [
@@ -339,103 +339,145 @@ export const TEXT = {
         en: '650kr',
         dk: '650kr'
       }
+    },
+    menu: {
+      title: {
+        en: 'Menu',
+        dk: 'Menu'
+      },
+      burgers: {
+        title: {
+          en: 'Burgers',
+          dk: 'Burgere'
+        },
+        mrCheesy: {
+          title: {
+            en: 'Mr. Cheesy',
+            dk: 'Mr. Cheesy'
+          },
+          description: {
+            en: 'Hakket oksekød, cheddar, iceberg, tomat, agurk, rødløg og ketchup! Bolle smurt med mayonnaise.',
+            dk: 'Hakket oksekød, cheddar, iceberg, tomat, agurk, rødløg og ketchup! Bolle smurt med mayonnaise.'
+          } 
+        },
+        houseBurger: {
+          title: {
+            en: 'Pool-Pub Houseburger',
+            dk: 'Pool-Pub Houseburger'
+          },
+          description: {
+            en: 'Hakket oksekød, iceberg, karamelliseret løg, ketchup og spejlæg! Bolle smurt med mayonnaise.',
+            dk: 'Hakket oksekød, iceberg, karamelliseret løg, ketchup og spejlæg! Bolle smurt med mayonnaise.'
+          }
+        },
+        hotAsHell: {
+          title: {
+            en: 'Hot as Hell',
+            dk: 'Hot as Hell'
+          },
+          description: {
+            en: 'Hakket oksekød, iceberg, syltede agurk, jalapenos, persille & HJEMMELAVET CHILISAUCE! Bolle smurt med mayonnaise.',
+            dk: 'Hakket oksekød, iceberg, syltede agurk, jalapenos, persille & HJEMMELAVET CHILISAUCE! Bolle smurt med mayonnaise.'
+          }
+        }
+      }
     }
   },
   partyRoom: {
     title: {
-      en: "Party Room",
-      dk: "Selskabslokale"
+      en: 'Party Room',
+      dk: 'Selskabslokale'
     },
     content1: {
-      en: "If you want to arrange a party, renuion or what ever you want to celebrate Pool-pub can help you with that.",
-      dk: "Du skal holde en fest, en kom sammen, en reunion, – Du skal afholde noget, hvor I kan hygge, have det sjovt og feste! Vi har faciliteterne til at sørge for, at jeres aften bliver den bedste aften! Om I er et selskab på 15 eller på 60, kan vi skræddersy en aften, så den passer jeres selskab perfekt! Ved større selskaber kan vi tilbyde:"
+      en: 'If you want to arrange a party, renuion or what ever you want to celebrate Pool-pub can help you with that.',
+      dk: 'Du skal holde en fest, en kom sammen, en reunion, – Du skal afholde noget, hvor I kan hygge, have det sjovt og feste! Vi har faciliteterne til at sørge for, at jeres aften bliver den bedste aften! Om I er et selskab på 15 eller på 60, kan vi skræddersy en aften, så den passer jeres selskab perfekt! Ved større selskaber kan vi tilbyde:'
     },
     contentList: [
       {
-        en: "Et selskabslokale på 100 m2 inkl. borde, stole, service, køleskab og musik",
-        dk: "Et selskabslokale på 100 m2 inkl. borde, stole, service, køleskab og musik"
+        en: 'Et selskabslokale på 100 m2 inkl. borde, stole, service, køleskab og musik',
+        dk: 'Et selskabslokale på 100 m2 inkl. borde, stole, service, køleskab og musik'
       },
       {
-        en: "At arrangere alt, det vil sige stå for det hele, herunder serveringspersonale, oprydning, mad, drikkelse, underholdning og musik",
-        dk: "At arrangere alt, det vil sige stå for det hele, herunder serveringspersonale, oprydning, mad, drikkelse, underholdning og musik"
+        en: 'At arrangere alt, det vil sige stå for det hele, herunder serveringspersonale, oprydning, mad, drikkelse, underholdning og musik',
+        dk: 'At arrangere alt, det vil sige stå for det hele, herunder serveringspersonale, oprydning, mad, drikkelse, underholdning og musik'
       },
       {
-        en: "I står selv for det hele, hvor vi blot sørger for lokalet",
-        dk: "I står selv for det hele, hvor vi blot sørger for lokalet"
+        en: 'I står selv for det hele, hvor vi blot sørger for lokalet',
+        dk: 'I står selv for det hele, hvor vi blot sørger for lokalet'
       },
       {
-        en: "I står for enkelte dele og så står vi for resten.",
-        dk: "I står for enkelte dele og så står vi for resten"
+        en: 'I står for enkelte dele og så står vi for resten.',
+        dk: 'I står for enkelte dele og så står vi for resten'
       }
     ],
     content2: {
-      en: "Vi har et samarbejde med en virkelig dygtig kok, hvorfor hvis vi står for maden, ved at det er 110% Lækkert!",
-      dk: "Vi har et samarbejde med en virkelig dygtig kok, hvorfor hvis vi står for maden, ved at det er 110% Lækkert!"
+      en: 'Vi har et samarbejde med en virkelig dygtig kok, hvorfor hvis vi står for maden, ved at det er 110% Lækkert!',
+      dk: 'Vi har et samarbejde med en virkelig dygtig kok, hvorfor hvis vi står for maden, ved at det er 110% Lækkert!'
     }
   },
   photoGallery: {
     title: {
-      en: "Photo Gallery",
-      dk: "Gallerier"
+      en: 'Photo Gallery',
+      dk: 'Gallerier'
     },
     openGalleryBtn: {
-      en: "Open Gallery",
-      dk: "Open Gallery"
+      en: 'Open Gallery',
+      dk: 'Open Gallery'
     }
   },
   contact: {
     title: {
-      en: "Contact",
-      dk: "Kontakt"
+      en: 'Contact',
+      dk: 'Kontakt'
     },
     address: {
       title: {
-        en: "Address:",
-        dk: "Address:"
+        en: 'Address:',
+        dk: 'Address:'
       },
       content: {
-        en: "Rentemestervej 67, 2400 Copenhagen NV",
-        dk: "Rentemestervej 67, 2400 Copenhagen NV"
+        en: 'Rentemestervej 67, 2400 Copenhagen NV',
+        dk: 'Rentemestervej 67, 2400 Copenhagen NV'
       }
     },
     phone: {
       title: {
-        en: "Phone:",
-        dk: "Tlf:"
+        en: 'Phone:',
+        dk: 'Tlf:'
       },
       content: {
-        en: "+45 38 88 00 29",
-        dk: "+45 38 88 00 29"
+        en: '+45 38 88 00 29',
+        dk: '+45 38 88 00 29'
       }
     },
     email: {
       title: {
-        en: "Email:",
-        dk: "Email:"
+        en: 'Email:',
+        dk: 'Email:'
       },
       content: {
-        en: "poolpub@poolpub.dk",
-        dk: "poolpub@poolpub.dk"
+        en: 'poolpub@poolpub.dk',
+        dk: 'poolpub@poolpub.dk'
       }
     },
     facebook: {
       title: {
-        en: "Facebook:",
-        dk: "Facebook:"
+        en: 'Facebook:',
+        dk: 'Facebook:'
       },
       content: {
-        en: "POOL-PUB Copenhagen",
-        dk: "POOL-PUB Copenhagen"
+        en: 'POOL-PUB Copenhagen',
+        dk: 'POOL-PUB Copenhagen'
       }
     },
     instagram: {
       title: {
-        en: "Instagram:",
-        dk: "Instagram:"
+        en: 'Instagram:',
+        dk: 'Instagram:'
       },
       content: {
-        en: "poolpub_cph",
-        dk: "poolpub_cph"
+        en: 'poolpub_cph',
+        dk: 'poolpub_cph'
       }
     }
   }

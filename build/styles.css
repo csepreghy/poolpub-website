@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond);@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&subset=latin-ext);@import url(https://fonts.googleapis.com/css?family=Yeseva+One);@import url(https://fonts.googleapis.com/css?family=Noto+Serif);@import url(https://fonts.googleapis.com/css?family=Roboto:100,300);* {
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond);@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&subset=latin-ext);@import url(https://fonts.googleapis.com/css?family=Yeseva+One);@import url(https://fonts.googleapis.com/css?family=Noto+Serif);@import url(https://fonts.googleapis.com/css?family=Roboto:100,300);@import url(http://www.1001fonts.com/dorsa-font.html?text=%3E&size=240);@import url(http://www.1001fonts.com/moodyrock-font.html?text=%3E&size=240);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
@@ -112,6 +112,28 @@ a {
 
 .card-5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
 
 #contact {
   background-color: #fff;
@@ -477,6 +499,65 @@ a {
     #prices .priceblock div.lists-container ul:last-child {
       margin-left: 30px; }
 
+#prices .special-offers-title-container {
+  margin-top: 40px; }
+
+#prices .packages-container {
+  width: 90%;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  #prices .packages-container .frame-1 {
+    height: 300px;
+    background: url("/assets/frame-1.png"); }
+  #prices .packages-container .frame-2 {
+    height: 345px;
+    background: url("/assets/frame-2.png"); }
+  #prices .packages-container .frame-3 {
+    height: 375px;
+    background: url("/assets/frame-3.png"); }
+  #prices .packages-container .package {
+    width: 300px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 55px; }
+    #prices .packages-container .package-title {
+      margin-bottom: 20px; }
+    #prices .packages-container .package ul {
+      line-height: 2;
+      list-style: none; }
+
+#prices .menu {
+  margin-top: 40px; }
+  #prices .menu .menu-gallery {
+    width: 650px;
+    margin: 20px auto;
+    border: 5px solid #fff; }
+    #prices .menu .menu-gallery .slick-arrow {
+      width: auto;
+      height: auto; }
+      #prices .menu .menu-gallery .slick-arrow:before {
+        content: ''; }
+      #prices .menu .menu-gallery .slick-arrow img {
+        height: 80px; }
+    #prices .menu .menu-gallery .slick-next {
+      right: -75px; }
+    #prices .menu .menu-gallery .slick-prev {
+      left: -75px; }
+  #prices .menu .menu-prices {
+    width: 650px;
+    margin: 40px auto;
+    text-align: left; }
+    #prices .menu .menu-prices-list {
+      margin-top: 40px; }
+      #prices .menu .menu-prices-list-item {
+        margin-bottom: 25px; }
+        #prices .menu .menu-prices-list-item h3 {
+          margin-bottom: 10px; }
+
 @media screen and (max-width: 1200px) {
   #prices .priceblock {
     width: 100%; }
@@ -487,7 +568,9 @@ a {
     #prices .priceblock div.lists-container {
       margin-left: 40px; }
       #prices .priceblock div.lists-container ul:last-child {
-        margin-left: 10px; } }
+        margin-left: 10px; }
+  #prices .packages-container {
+    width: 100%; } }
 
 @media screen and (max-width: 940px) {
   #prices .priceblock {
@@ -514,7 +597,58 @@ a {
       #prices .priceblock div.lists-container ul:last-child {
         float: right;
         text-align: right;
-        margin-left: 0; } }
+        margin-left: 0; }
+  #prices .packages-container {
+    flex-direction: column; }
+    #prices .packages-container .frame-1 {
+      height: 350px; }
+    #prices .packages-container .frame-2 {
+      height: 400px; }
+    #prices .packages-container .frame-3 {
+      height: 435px; }
+    #prices .packages-container .package {
+      width: 350px;
+      padding-top: 50px;
+      margin-bottom: 60px; }
+      #prices .packages-container .package-title {
+        margin-bottom: 40px; }
+      #prices .packages-container .package ul {
+        font-size: 22px;
+        line-height: 2.2; }
+  #prices .menu .menu-gallery {
+    width: 75%;
+    height: auto; }
+    #prices .menu .menu-gallery img {
+      width: 100%; }
+    #prices .menu .menu-gallery .slick-arrow {
+      width: 40px;
+      height: 25px; }
+      #prices .menu .menu-gallery .slick-arrow img {
+        height: 100%;
+        width: 100%; }
+    #prices .menu .menu-gallery .slick-next {
+      right: -55px; }
+    #prices .menu .menu-gallery .slick-prev {
+      left: -55px; }
+  #prices .menu .menu-prices {
+    width: 90%;
+    margin: 40px auto;
+    text-align: left; }
+    #prices .menu .menu-prices-list {
+      margin-top: 40px; }
+      #prices .menu .menu-prices-list-item {
+        margin-bottom: 25px; }
+        #prices .menu .menu-prices-list-item h3 {
+          margin-bottom: 10px; } }
+
+@media screen and (max-width: 640px) {
+  #prices .menu .menu-gallery .slick-arrow {
+    width: 25px;
+    height: 30px; }
+  #prices .menu .menu-gallery .slick-next {
+    right: -55px; }
+  #prices .menu .menu-gallery .slick-prev {
+    left: -55px; } }
 
 @media screen and (max-width: 500px) {
   #prices .priceblock div.price-img {
@@ -522,7 +656,22 @@ a {
   #prices .priceblock div.lists-container {
     width: 95%; }
     #prices .priceblock div.lists-container ul li {
-      font-size: 18px; } }
+      font-size: 18px; }
+  #prices .packages-container .frame-1 {
+    height: 310px; }
+  #prices .packages-container .frame-2 {
+    height: 340px; }
+  #prices .packages-container .frame-3 {
+    height: 380px; }
+  #prices .packages-container .package {
+    width: 300px;
+    padding-top: 45px;
+    margin-bottom: 25px; }
+    #prices .packages-container .package-title {
+      font-size: 22px;
+      margin-bottom: 25px; }
+    #prices .packages-container .package ul {
+      line-height: 2; } }
 
 @media only screen and (max-width: 400px) {
   #prices .priceblock div.lists-container ul li {

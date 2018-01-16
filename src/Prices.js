@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import PriceBlock from './PriceBlock';
-import Package from './Package.js';
+import Package from './Package';
 import { TEXT } from './TEXT';
+import MenuGallery from './MenuGallery';
 
 class Prices extends Component {
 
@@ -41,13 +42,39 @@ class Prices extends Component {
         <div className="packages-container">
           <Package packageLabels={ TEXT.prices.package1 }
                    lang={ this.props.lang } 
-                   frameClass={ 'frame-1' } />
+                   frameClass={ 'frame-1' }
+                   price={ '1600kr' } />
           <Package packageLabels={ TEXT.prices.package2 }
                    lang={ this.props.lang } 
-                   frameClass={ 'frame-2' } />
+                   frameClass={ 'frame-2' }
+                   price={ '1300kr' } />
           <Package packageLabels={ TEXT.prices.package3 }
                    lang={ this.props.lang }
-                   frameClass={ 'frame-3' } />
+                   frameClass={ 'frame-3' } 
+                   price={ '650kr' } />
+        </div>
+        <div className="menu">
+          <h1 className="menu-title">{TEXT.prices.menu.title[this.props.lang]}</h1>
+          <img  className="divider" src="assets/divider-white.png" />
+          <MenuGallery />
+          <div className="menu-prices">
+            <h1>{ TEXT.prices.menu.burgers.title[this.props.lang] }</h1>
+            <span>(69kr)</span>
+            <div className="menu-prices-list">
+              <div className="menu-prices-list-item">
+                <h3>{ TEXT.prices.menu.burgers.mrCheesy.title[this.props.lang] }</h3>
+                <p>{ TEXT.prices.menu.burgers.mrCheesy.description[this.props.lang] }</p>
+              </div>
+              <div className="menu-prices-list-item">
+                <h3>{ TEXT.prices.menu.burgers.houseBurger.title[this.props.lang] }</h3>
+                <p>{ TEXT.prices.menu.burgers.houseBurger.description[this.props.lang] }</p>
+              </div>
+              <div className="menu-prices-list-item">
+                <h3>{ TEXT.prices.menu.burgers.hotAsHell.title[this.props.lang] }</h3>
+                <p>{ TEXT.prices.menu.burgers.hotAsHell.description[this.props.lang] }</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     );
