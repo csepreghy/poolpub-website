@@ -8,7 +8,7 @@
     width: $bar-width;
     height: $bar-height + $bar-spacing*2;
     cursor: pointer;
-    z-index: 190;
+    z-index: 9999;
 
   .bar,
   .bar:after,
