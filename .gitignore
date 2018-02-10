@@ -3,6 +3,10 @@ npm-debug.log
 dist
 node_modules
 build
+build/
+build/*.*
+
+package-lock.json
 
 ### PhpStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
