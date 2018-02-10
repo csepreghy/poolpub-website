@@ -7,8 +7,6 @@ require("../styles/application.scss");
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.js';
-import PhotoGallery from './PhotoGallery';
-import PartyRoom from './PartyRoom';
 
 ReactDOM.render((
   <App />
