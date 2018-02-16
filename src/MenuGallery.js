@@ -34,7 +34,7 @@ class MenuGallery extends Component {
   settings = {
     dots: true,
     arrows: true,
-    autoplay: false,
+    autoplay: true,
     infinite: true,
     fade: true,
     slidesToShow: 1,

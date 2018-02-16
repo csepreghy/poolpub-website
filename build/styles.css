@@ -510,53 +510,64 @@ a {
   justify-content: space-around;
   align-items: center; }
   #prices .packages-container .frame-1 {
-    height: 300px;
-    background: url("/assets/frame-1.png"); }
+    height: 310px;
+    background: url("/assets/frame-1-2.png"); }
   #prices .packages-container .frame-2 {
-    height: 345px;
+    height: 355px;
     background: url("/assets/frame-2.png"); }
   #prices .packages-container .frame-3 {
-    height: 375px;
+    height: 390px;
     background: url("/assets/frame-3.png"); }
   #prices .packages-container .package {
     width: 300px;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    padding-top: 55px; }
+    padding-top: 40px; }
     #prices .packages-container .package-title {
       margin-bottom: 20px; }
     #prices .packages-container .package ul {
       line-height: 2;
       list-style: none; }
 
-#prices .menu {
-  margin-top: 40px; }
-  #prices .menu .menu-gallery {
-    width: 650px;
-    margin: 20px auto;
-    border: 5px solid #fff; }
-    #prices .menu .menu-gallery .slick-arrow {
-      width: auto;
-      height: auto; }
-      #prices .menu .menu-gallery .slick-arrow:before {
-        content: ''; }
-      #prices .menu .menu-gallery .slick-arrow img {
-        height: 80px; }
-    #prices .menu .menu-gallery .slick-next {
-      right: -75px; }
-    #prices .menu .menu-gallery .slick-prev {
-      left: -75px; }
-  #prices .menu .menu-prices {
-    width: 650px;
-    margin: 40px auto;
-    text-align: left; }
-    #prices .menu .menu-prices-list {
-      margin-top: 40px; }
-      #prices .menu .menu-prices-list-item {
-        margin-bottom: 25px; }
-        #prices .menu .menu-prices-list-item h3 {
-          margin-bottom: 10px; }
+#prices .menu .menu-gallery {
+  width: 700px;
+  margin: 20px auto;
+  border: 5px solid #fff; }
+  #prices .menu .menu-gallery .slick-arrow {
+    width: auto;
+    height: auto; }
+    #prices .menu .menu-gallery .slick-arrow:before {
+      content: ''; }
+    #prices .menu .menu-gallery .slick-arrow img {
+      height: 80px; }
+  #prices .menu .menu-gallery .slick-next {
+    right: -75px; }
+  #prices .menu .menu-gallery .slick-prev {
+    left: -75px; }
+
+#prices .menu .menu-prices {
+  width: 700px;
+  margin: 40px auto;
+  text-align: left; }
+  #prices .menu .menu-prices .inline-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px; }
+    #prices .menu .menu-prices .inline-list-container ul {
+      position: relative;
+      left: 24px;
+      line-height: 2; }
+  #prices .menu .menu-prices-list {
+    margin-top: 40px; }
+    #prices .menu .menu-prices-list-item {
+      margin-bottom: 25px; }
+      #prices .menu .menu-prices-list-item h2 {
+        margin-top: 20px; }
+      #prices .menu .menu-prices-list-item h3 {
+        margin-bottom: 10px; }
 
 @media screen and (max-width: 1200px) {
   #prices .priceblock {
@@ -601,11 +612,11 @@ a {
   #prices .packages-container {
     flex-direction: column; }
     #prices .packages-container .frame-1 {
-      height: 350px; }
+      height: 370px; }
     #prices .packages-container .frame-2 {
-      height: 400px; }
+      height: 425px; }
     #prices .packages-container .frame-3 {
-      height: 435px; }
+      height: 475px; }
     #prices .packages-container .package {
       width: 350px;
       padding-top: 50px;
@@ -658,11 +669,11 @@ a {
     #prices .priceblock div.lists-container ul li {
       font-size: 18px; }
   #prices .packages-container .frame-1 {
-    height: 310px; }
-  #prices .packages-container .frame-2 {
     height: 340px; }
-  #prices .packages-container .frame-3 {
+  #prices .packages-container .frame-2 {
     height: 380px; }
+  #prices .packages-container .frame-3 {
+    height: 430px; }
   #prices .packages-container .package {
     width: 300px;
     padding-top: 45px;
@@ -672,6 +683,9 @@ a {
       margin-bottom: 25px; }
     #prices .packages-container .package ul {
       line-height: 2; } }
+
+.package-price {
+  font-size: 24px; }
 
 @media only screen and (max-width: 400px) {
   #prices .priceblock div.lists-container ul li {
@@ -686,7 +700,7 @@ a {
     width: 45px;
     height: 29px;
     cursor: pointer;
-    z-index: 190; }
+    z-index: 9999; }
     #hamburger-menu .hamburger-menu .bar,
     #hamburger-menu .hamburger-menu .bar:after,
     #hamburger-menu .hamburger-menu .bar:before {

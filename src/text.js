@@ -380,6 +380,24 @@ export const TEXT = {
             dk: 'Hakket oksekød, iceberg, syltede agurk, jalapenos, persille & HJEMMELAVET CHILISAUCE! Bolle smurt med mayonnaise.'
           }
         }
+      },
+      burgersInMenu: {
+        title: {
+          en: 'Burgers in menu',
+          dk: 'Burgere i menu'
+        },
+        fries: { 
+          en: 'Fries',
+          dk: 'Pommes'
+        },
+        straightFries: {
+          en: 'Straight Cut Fries',
+          dk: 'Straight cut'
+        },
+        curlyFries: {
+          en: 'Curly Fries',
+          dk: 'Curly Fries'
+        }
       }
     }
   },
@@ -480,5 +498,17 @@ export const TEXT = {
         dk: 'poolpub_cph'
       }
     }
+  },
+  extra: {
+    en: 'Extra',
+    dk: 'Ekstra'
+  },
+  cheese: {
+    en: 'Cheese',
+    dk: 'Ost'
+  },
+  fritter: {
+    en: 'Fritter',
+    dk: 'Fritter'
   }
 }

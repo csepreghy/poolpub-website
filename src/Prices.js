@@ -58,7 +58,9 @@ class Prices extends Component {
           <img  className="divider" src="assets/divider-white.png" />
           <MenuGallery />
           <div className="menu-prices">
-            <h1>{ TEXT.prices.menu.burgers.title[this.props.lang] }</h1>
+            <div className="menu-item-title">
+              <h1>{ TEXT.prices.menu.burgers.title[this.props.lang] }</h1>
+            </div>
             <span>(69kr)</span>
             <div className="menu-prices-list">
               <div className="menu-prices-list-item">
@@ -74,6 +76,34 @@ class Prices extends Component {
                 <p>{ TEXT.prices.menu.burgers.hotAsHell.description[this.props.lang] }</p>
               </div>
             </div>
+            <h1>{ TEXT.prices.menu.burgersInMenu.title[this.props.lang] }</h1>
+            <span>(98kr)</span>
+            <div className="inline-list-container">
+              <div className="menu-prices-list-item-inline">
+                <h2>{ TEXT.prices.menu.burgersInMenu.fries[this.props.lang] }</h2>
+                <ul>
+                  <li><span>{ TEXT.prices.menu.burgersInMenu.straightFries[this.props.lang] }</span></li>
+                  <li><span>{ TEXT.prices.menu.burgersInMenu.curlyFries[this.props.lang] }</span></li>
+                </ul>
+              </div>
+              <div className="menu-prices-list-item-inline">
+                <h2>Dips</h2>
+                <ul>
+                  <li><span>Chili Mayo</span></li>
+                  <li><span>Aioli</span></li>
+                  <li><span>Mayo</span></li>
+                  <li><span>Chili</span></li>
+                </ul>
+              </div>
+              <div className="menu-prices-list-item-inline">
+                <h2>{ TEXT.extra[this.props.lang] }</h2>
+                <ul>
+                  <li><span>{ TEXT.cheese[this.props.lang] }</span></li>
+                  <li><span>dip</span></li>
+                </ul>
+              </div>
+            </div>
+            <h1 className="menu-item-title">Snacks</h1>
           </div>
         </div>
       </section>
