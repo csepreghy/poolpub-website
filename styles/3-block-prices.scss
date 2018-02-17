@@ -96,9 +96,15 @@
   .menu {
 
     .menu-gallery {
-      width: 700px;
+      width: 600px;
+      height: 400px;
       margin: 20px auto;
       border: 5px solid #fff;
+      overflow: hidden;
+
+      img {
+        height: 400px;
+      }
 
       .slick-arrow {
         width: auto;
@@ -123,7 +129,7 @@
     }
 
     .menu-prices {
-      width: 700px;
+      width: 600px;
       margin: 40px auto;
       text-align: left;
 

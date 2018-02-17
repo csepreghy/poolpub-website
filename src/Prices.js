@@ -56,7 +56,7 @@ class Prices extends Component {
         <div className="menu">
           <h1 className="menu-title">{TEXT.prices.menu.title[this.props.lang]}</h1>
           <img  className="divider" src="assets/divider-white.png" />
-          <MenuGallery imgPath="menu-gallery/menu-gallery-img"/>
+          <MenuGallery imgPath="menu-gallery/menu-gallery-img" numberOfImages={ 6 }/>
           <div className="menu-prices">
             <div className="menu-item-title">
               <h1>{ TEXT.prices.menu.burgers.title[this.props.lang] }</h1>
@@ -107,6 +107,7 @@ class Prices extends Component {
             </div>
             <div className="snacks-container">
               <h1 className="snack-item-title">Snacks</h1>
+              <MenuGallery imgPath="snacks/snack" numberOfImages={ 2 } />
               <div className="snack-item">
                 <h2>{ TEXT.pommes[this.props.lang] }</h2>
                 <div className="snack-item-body">
@@ -139,15 +140,6 @@ class Prices extends Component {
                   <p>55kr</p>
                 </div>
               </div>
-              <div className="snack-item">
-                <h2>Nepalesisk Momo</h2>
-                <div className="snack-item-body">
-                  <p>Serveres med stærk hjemmelavet dressing</p>
-                  <div className="dotted-line"></div>
-                  <p>65kr</p>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
