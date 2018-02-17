@@ -510,5 +510,29 @@ export const TEXT = {
   fritter: {
     en: 'Fritter',
     dk: 'Fritter'
+  },
+  pommes: {
+    en: 'Fries',
+    dk: 'Pommes'
+  },
+  pommesExtras: {
+    en: 'Straight Cut or Curly Fries',
+    dk: 'Pommes eller Curly Fries'
+  },
+  snackKurv: {
+    en: 'Snack Box',
+    dk: 'Snack Kurv'
+  },
+  snackKurvExtras: {
+    en: 'Chili Cheese, Nuggets, Mozarella Sticks & Onion Rings',
+    dk: 'Chili Cheese, Nuggets, Mozarella Sticks & Løgringe'
+  },
+  toastExtras: {
+    en: 'with Ham & Cheese',
+    dk: 'med Skinke & Ost'
+  },
+  nachosExtras: {
+    en: 'with Chicken + 15kr',
+    dk: 'med kylling + 15kr'
   }
 }

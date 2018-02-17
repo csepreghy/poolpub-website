@@ -49,7 +49,7 @@ class MenuGallery extends Component {
 
   componentWillMount() {
     for (var i = 1; i < this.numberOfImages + 1; i++) {
-      this.imageUrls.push("assets/menu-gallery/menu-gallery-img" + i + ".jpg")
+      this.imageUrls.push("assets/" + this.props.imgPath + i + ".jpg")
     }
   }
 

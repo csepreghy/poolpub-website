@@ -127,6 +127,30 @@
       margin: 40px auto;
       text-align: left;
 
+      .menu-item-title {
+        border-bottom: 2px solid white;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+
+      .snack-item {
+        margin: 20px 0;
+
+        &-body {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .dotted-line {
+            border-bottom: 2px #fff dotted;
+            flex-grow: 1;
+            margin: 0 10px;
+            position: relative;
+            bottom: 8px;
+          }
+        }
+      }
+
       .inline-list-container {
         display: flex;
         flex-direction: row;

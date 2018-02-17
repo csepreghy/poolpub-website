@@ -56,7 +56,7 @@ class Prices extends Component {
         <div className="menu">
           <h1 className="menu-title">{TEXT.prices.menu.title[this.props.lang]}</h1>
           <img  className="divider" src="assets/divider-white.png" />
-          <MenuGallery />
+          <MenuGallery imgPath="menu-gallery/menu-gallery-img"/>
           <div className="menu-prices">
             <div className="menu-item-title">
               <h1>{ TEXT.prices.menu.burgers.title[this.props.lang] }</h1>
@@ -76,7 +76,9 @@ class Prices extends Component {
                 <p>{ TEXT.prices.menu.burgers.hotAsHell.description[this.props.lang] }</p>
               </div>
             </div>
-            <h1>{ TEXT.prices.menu.burgersInMenu.title[this.props.lang] }</h1>
+            <div className="menu-item-title">
+              <h1>{ TEXT.prices.menu.burgersInMenu.title[this.props.lang] }</h1>
+            </div>
             <span>(98kr)</span>
             <div className="inline-list-container">
               <div className="menu-prices-list-item-inline">
@@ -103,7 +105,50 @@ class Prices extends Component {
                 </ul>
               </div>
             </div>
-            <h1 className="menu-item-title">Snacks</h1>
+            <div className="snacks-container">
+              <h1 className="snack-item-title">Snacks</h1>
+              <div className="snack-item">
+                <h2>{ TEXT.pommes[this.props.lang] }</h2>
+                <div className="snack-item-body">
+                  <p>{ TEXT.pommesExtras[this.props.lang] }</p>
+                  <div className="dotted-line"></div>
+                  <p>34kr</p>
+                </div>
+              </div>
+              <div className="snack-item">
+                <h2>{ TEXT.snackKurv[this.props.lang] }</h2>
+                <div className="snack-item-body">
+                  <p>{ TEXT.snackKurvExtras[this.props.lang] }</p>
+                  <div className="dotted-line"></div>
+                  <p>46kr</p>
+                </div>
+              </div>
+              <div className="snack-item">
+                <h2 className="inlined m-r-10">Toast</h2><p className="inlined">(2 for 40kr)</p>
+                <div className="snack-item-body">
+                  <p>{ TEXT.toastExtras[this.props.lang] }</p>
+                  <div className="dotted-line"></div>
+                  <p>25kr</p>
+                </div>
+              </div>
+              <div className="snack-item">
+                <h2>Nachos</h2>
+                <div className="snack-item-body">
+                  <p>{ TEXT.nachosExtras[this.props.lang] }</p>
+                  <div className="dotted-line"></div>
+                  <p>55kr</p>
+                </div>
+              </div>
+              <div className="snack-item">
+                <h2>Nepalesisk Momo</h2>
+                <div className="snack-item-body">
+                  <p>Serveres med stærk hjemmelavet dressing</p>
+                  <div className="dotted-line"></div>
+                  <p>65kr</p>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
