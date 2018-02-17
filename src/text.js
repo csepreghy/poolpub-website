@@ -534,5 +534,17 @@ export const TEXT = {
   nachosExtras: {
     en: 'with Chicken + 15kr',
     dk: 'med kylling + 15kr'
+  },
+  chacuteri: {
+    en: 'Chacuteri',
+    dk: 'Chacuteri'
+  },
+  salater: {
+    en: 'Salads',
+    dk: 'Salater'
+  },
+  kod: {
+    en: 'Meat',
+    dk: 'Køb'
   }
 }

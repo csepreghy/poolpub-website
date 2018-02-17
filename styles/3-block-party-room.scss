@@ -1,4 +1,4 @@
-#partyroom {  
+#partyroom {
   text-align: center;
 
   .divider {
@@ -23,6 +23,21 @@
       margin: 20px 0 20px 0;
       padding-left: 40px;
     }
+  }
+
+  .menu-gallery {
+    border: 5px solid black;
+  }
+
+  .menu-item-title {
+    border-bottom: 2px solid black;
+  }
+
+  .buffet-list {
+    position: relative;
+    left: 24px;
+    line-height: 2;
+    margin: 20px 0;
   }
 }
 
