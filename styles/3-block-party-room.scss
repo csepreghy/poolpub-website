@@ -1,46 +1,45 @@
-#partyroom {
-  
-      text-align: center;
-  
-      .divider {
-        margin-bottom: 40px;
-      }
-  
-      .party-room-img {
-        width: 800px;
-        margin: auto;
-  
-        img {
-          width: 100%;
-        }
-      }
-  
-      .party-room-content {
-        margin: 40px auto 0 auto;
-        width: 1000px;
-        text-align: justify;
-  
-        ul {
-          margin: 20px 0 20px 0;
-          padding-left: 40px;
-        }
-      }
+#partyroom {  
+  text-align: center;
+
+  .divider {
+    margin-bottom: 40px;
+  }
+
+  .party-room-img {
+    width: 800px;
+    margin: auto;
+
+    img {
+      width: 100%;
     }
-  
-    @media screen and (max-width: $screen-lg) {
-      #partyroom {
-  
-        .party-room-content {
-          width: 90%;
-        }
-      }
+  }
+
+  .party-room-content {
+    margin: 40px auto 0 auto;
+    width: 1000px;
+    text-align: justify;
+
+    ul {
+      margin: 20px 0 20px 0;
+      padding-left: 40px;
     }
-  
-    @media screen and (max-width: $screen-md) {
-      #partyroom {
-  
-        .party-room-img {
-          width: 80%;
-        }
-      }
+  }
+}
+
+@media screen and (max-width: $screen-lg) {
+  #partyroom {
+
+    .party-room-content {
+      width: 90%;
     }
+  }
+}
+  
+@media screen and (max-width: $screen-md) {
+  #partyroom {
+
+    .party-room-img {
+      width: 80%;
+    }
+  }
+}
