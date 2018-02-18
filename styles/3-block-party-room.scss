@@ -39,6 +39,35 @@
     line-height: 2;
     margin: 20px 0;
   }
+
+  .party-room-prices {
+    width: 720px;
+    margin: 40px auto;
+    text-align: left;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .party-room-item {
+      margin: 20px 0;
+
+      &-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        .dotted-line {
+          border-bottom: 2px #000 dotted;
+          flex-grow: 1;
+          margin: 0 10px;
+          position: relative;
+          bottom: 8px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: $screen-lg) {

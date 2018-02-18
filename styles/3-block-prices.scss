@@ -87,97 +87,94 @@
   }
 }
 
-.menu {
+.menu-gallery {
+  width: 720px;
+  height: 480px;
+  margin: 20px auto;
+  border: 5px solid #fff;
+  overflow: hidden;
 
-  .menu-gallery {
-    width: 720px;
+  img {
     height: 480px;
-    margin: 20px auto;
-    border: 5px solid #fff;
-    overflow: hidden;
+  }
+
+  .slick-arrow {
+    width: auto;
+    height: auto;
+
+    &:before {
+      content: '';
+    }
 
     img {
-      height: 480px;
-    }
-
-    .slick-arrow {
-      width: auto;
-      height: auto;
-
-      &:before {
-        content: '';
-      }
-
-      img {
-        height: 80px;
-      }
-    }
-  
-    .slick-next {
-      right: -75px;
-    }
-
-    .slick-prev {
-      left: -75px;
+      height: 80px;
     }
   }
 
-  .menu-prices {
-    width: 720px;
-    margin: 40px auto;
-    text-align: left;
+  .slick-next {
+    right: -75px;
+  }
 
-    .menu-item-title {
-      border-bottom: 2px solid white;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
-    }
+  .slick-prev {
+    left: -75px;
+  }
+}
 
-    .snack-item {
-      margin: 20px 0;
+.menu-prices {
+  width: 720px;
+  margin: 40px auto;
+  text-align: left;
 
-      &-body {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+  .menu-item-title {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
 
-        .dotted-line {
-          border-bottom: 2px #fff dotted;
-          flex-grow: 1;
-          margin: 0 10px;
-          position: relative;
-          bottom: 8px;
-        }
-      }
-    }
+  .snack-item {
+    margin: 20px 0;
 
-    .inline-list-container {
+    &-body {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
-      margin-top: 25px;
 
-      ul {
+      .dotted-line {
+        border-bottom: 2px #fff dotted;
+        flex-grow: 1;
+        margin: 0 10px;
         position: relative;
-        left: 24px;
-        line-height: 2;
+        bottom: 8px;
       }
     }
+  }
 
-    &-list {
-      margin-top: 40px;
+  .inline-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
 
-      &-item {
-        margin-bottom: 25px;
+    ul {
+      position: relative;
+      left: 24px;
+      line-height: 2;
+    }
+  }
 
-        h2 {
-          margin-top: 20px;
-        }
+  &-list {
+    margin-top: 40px;
 
-        h3 {
-          margin-bottom: 10px;
-        }
+    &-item {
+      margin-bottom: 25px;
+
+      h2 {
+        margin-top: 20px;
+      }
+
+      h3 {
+        margin-bottom: 10px;
       }
     }
   }

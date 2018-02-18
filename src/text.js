@@ -546,5 +546,125 @@ export const TEXT = {
   kod: {
     en: 'Meat',
     dk: 'Køb'
+  },
+  partyRoomPrices: {
+    en: 'Party Room',
+    dk: 'Selskabslokale Priser'
+  },
+  lokalet: {
+    en: 'The Room',
+    dk: 'Lokalet'
+  },
+  serveringsfad: {
+    en: '',
+    dk: 'Serveringsfad'
+  },
+  vinglas: {
+    en: 'Wine glass',
+    dk: 'Vinglas'
+  },
+  champagneGlass: {
+    en: 'Champagne Glass',
+    dk: 'Champagneglas'
+  },
+  vandglas: {
+    en: 'Water Glasses / Cups',
+    dk: 'Vandglas / Kopper'
+  },
+  vandkander: {
+    en: 'Water Jugs',
+    dk: 'Vandkander'
+  },
+  tallerkner: {
+    en: 'Plates',
+    dk: 'Tallerkner'
+  },
+  bestik: {
+    en: 'Cutlerz',
+    dk: 'Bestik'
+  },
+  dug: {
+    en: 'Cloth',
+    dk: 'Dug'
+  },
+  friIs: {
+    en: '',
+    dk: 'Fri Is'
+  },
+  perSet: {
+    en: 'per set',
+    dk: 'pr sæt'
+  },
+  equipmentRental: {
+    en: 'Equipment rental',
+    dk: 'Leje af udstyr'
+  },
+  activities: {
+    en: 'Activities',
+    dk: 'Aktiviter'
+  },
+  allDayPool: {
+    en: '',
+    dk: 'Et pool bord til rådighed hele dagen'
+  },
+  beerpongBoard: {
+    en: 'Beerpong Table',
+    dk: 'Beerpong Bord'
+  },
+  drinks: {
+    en: 'Drinks',
+    dk: 'Drikkevarer'
+  },
+  sodavand: {
+    en: '',
+    dk: '1 ks. Øl / Sodavand'
+  },
+  sodavandExtras: {
+    en: '',
+    dk: 'V. køb af 3 kasser eller mere 450 kr pr. ks.'
+  },
+  fustage: {
+    en: '',
+    dk: '1 Fustage 10l.'
+  },
+  sprut: {
+    en: '',
+    dk: '1 fl. Sprut'
+  },
+  sprutExtras: {
+    en: '',
+    dk: 'v køb af 3 fl. 400 pr. fl. + 2 ekstra sodavand pr. fl.'
+  },
+  luxSprut: {
+    en: '',
+    dk: '1 fl. Lux Sprut'
+  },
+  luxSprutExtras: {
+    en: '',
+    dk: 'v køb af 3 fl. 500 pr. fl. + 2 ekstra sodavand pr fl.'
+  },
+  shots: {
+    en: '',
+    dk: '1 fl. Shots'
+  },
+  shotsExtras: {
+    en: '',
+    dk: 'v køb af 3 fl. 300 pr. fl.'
+  },
+  redWine: {
+    en: 'Red Wine',
+    dk: 'Rødvin'
+  },
+  whiteWine: {
+    en: '1 ',
+    dk: '1 fl. White Wine'
+  },
+  kaffe: {
+    en: '',
+    dk: '1 Kande Kaffe'
+  },
+  cookies: {
+    en: '1 bowl of cookies for the coffee',
+    dk: '1 skål småkager til kaffen'
   }
 }

@@ -107,7 +107,7 @@ class Prices extends Component {
             </div>
             <div className="snacks-container">
               <h1 className="snack-item-title">Snacks</h1>
-              <MenuGallery imgPath="snacks/snack" numberOfImages={ 2 } />
+              <MenuGallery imgPath="snacks/snack" numberOfImages={ 3 } />
               <div className="snack-item">
                 <h2>{ TEXT.pommes[this.props.lang] }</h2>
                 <div className="snack-item-body">
