@@ -19,6 +19,7 @@ class Prices extends Component {
           <img className="divider" src="assets/divider-white.png" />
           <span>{ TEXT.prices.membership[this.props.lang] }</span>
           <span>{ TEXT.prices.evening[this.props.lang] }</span>
+          <p className="m-t-20">{ TEXT.bookATable[this.props.lang] }<a href="mailto:info@poolpub.dk">info@poolpub.dk</a></p>
         </div>
         <PriceBlock img={ "assets/prices-pool.jpg" }
                     lang={ this.props.lang }

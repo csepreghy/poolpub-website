@@ -666,5 +666,13 @@ export const TEXT = {
   cookies: {
     en: '1 bowl of cookies for the coffee',
     dk: '1 skål småkager til kaffen'
+  },
+  bookAnEvent: {
+    en: 'Booking of events at ',
+    dk: 'Booking of events at '
+  },
+  bookATable: {
+    en: 'Book a table at ',
+    dk: 'Book a table at '
   }
 }

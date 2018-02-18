@@ -15,6 +15,7 @@ class PartyRoom extends Component {
       <section id="partyroom" className="block clearfix">
         <div className="row">
           <h1>{ TEXT.partyRoom.title[this.props.lang] }</h1>
+          <p>{ TEXT.bookAnEvent[this.props.lang] }<a href="mailto:poolpub@poolpub.dk">poolpub@poolpub.dk</a></p>
           <img className="divider" src="assets/divider-black.png" />
         </div>
         <MenuGallery imgPath="partyroom/party" numberOfImages={ 8 }/>
