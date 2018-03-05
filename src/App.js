@@ -10,8 +10,6 @@ import DesignedByAndrew from './DesignedByAndrew';
 
 class App extends Component {
 
-  console.log('Test');
-
   constructor(props) {
     super();
 
