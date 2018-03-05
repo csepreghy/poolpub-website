@@ -60,6 +60,28 @@ class Prices extends Component {
                    frameClass={ 'frame-4' } 
                    price={ '550kr' } />
         </div>
+        <div className="five-match-container">
+          <h1>{ TEXT.fiveMatch[this.props.lang] }</h1>
+          <img className="divider" src="assets/divider-white.png" />
+          <MenuGallery imgPath="fivematch/fivematch" numberOfImages={ 7 } />
+          <p>{ TEXT.fiveMatchDescription[this.props.lang] }</p>
+          <h2>{ TEXT.chooseGames[this.props.lang] }</h2>
+          <div className="fivematch-games">
+            <ul>
+              <li>Pool</li>
+              <li>Golf</li>
+              <li>{ TEXT.boxing[this.props.lang] }</li>
+              <li>{ TEXT.bordCurling[this.props.lang] }</li>
+            </ul>
+            <ul>
+              <li>{ TEXT.tableTennis[this.props.lang] }</li>
+              <li>{ TEXT.tableFootball[this.props.lang] }</li>
+              <li>{ TEXT.huntingSimulator[this.props.lang] }</li>
+              <li>Dart</li>
+            </ul>
+          </div>
+          <p>{ TEXT.fiveMatchPrice[this.props.lang] }</p>
+        </div>
         <div className="menu">
           <h1 className="menu-title">{TEXT.prices.menu.title[this.props.lang]}</h1>
           <img  className="divider" src="assets/divider-white.png" />

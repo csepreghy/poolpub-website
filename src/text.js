@@ -706,5 +706,41 @@ export const TEXT = {
   birthdayTitle: {
     en: 'Birthday package',
     dk: 'Fødselsdagsfest Package'
+  },
+  fiveMatch: {
+    en: 'Five Match',
+    dk: 'Femkamp'
+  },
+  fiveMatchDescription: {
+    en: 'Compete against your friends in 5 different games of your choice, that you can all play at Pool-Pub!',
+    dk: 'Konkurer mod dine venner i 5 forskellige spil, efter eget valg, som i alle kan spille på Pool-Pub!'
+  },
+  boxing: {
+    en: 'Boxing',
+    dk: 'Boksning'
+  },
+  bordCurling: {
+    en: 'Board Curling',
+    dk: 'Bordcurling'
+  },
+  tableTennis: {
+    en: 'Table Tennis',
+    dk: 'Bordtennis'
+  },
+  tableFootball: {
+    en: 'Table Football',
+    dk: 'Bordfodbold'
+  },
+  huntingSimulator: {
+    en: 'Hunting Simulator',
+    dk: 'Skydesimulator'
+  },
+  chooseGames: {
+    en: 'Games to choose from:',
+    dk: 'Spil at vælge imellem:'
+  },
+  fiveMatchPrice: {
+    en: '139kr. per person (over 12, only 125kr. per person)',
+    dk: 'Kun 139kr. pr. mand (over 12 pers 125kr pr. mand)'
   }
 }
