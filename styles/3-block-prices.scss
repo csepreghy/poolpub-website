@@ -92,13 +92,13 @@
 
   .frame-4 {
     margin: auto;
-    height: 420px;
-    width: 320px;
+    height: 480px;
+    width: 340px;
     background: url('/assets/frame-3.png');
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
     
@@ -400,6 +400,8 @@
 
   .birthday-container {
     .frame-4 {
+      width: 320px;
+      
       h2.package-title {
         font-size: 26px !important;
       }

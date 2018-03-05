@@ -347,18 +347,20 @@ export const TEXT = {
       },
       list: {
         en: [
-          '1 Beer Tower',
-          '2 Bag of Chips',
           '2 Hours of Pool',
-          '1 Nachos',
-          '4 Cocktails'
+          '1 Flaske Husets Sprut',
+          'or',
+          '1 Kasse Øl',
+          '10 Shots',
+          '(Ingen Gæstegebyr)'
         ],
         dk: [
-          '1 Øl Tårn',
-          '2 Skåle Chips',
           '2 Timers Pool',
-          '1 Nachos',
-          '4 Cocktails'
+          '1 Flaske Husets Sprut',
+          'eller',
+          '1 Kasse Øl',
+          '10 Shots',
+          '(Ingen Gæstegebyr)'
         ]
       },
       price: {
