@@ -1,46 +1,89 @@
 #partyroom {
-  
-      text-align: center;
-  
-      .divider {
-        margin-bottom: 40px;
-      }
-  
-      .party-room-img {
-        width: 800px;
-        margin: auto;
-  
-        img {
-          width: 100%;
-        }
-      }
-  
-      .party-room-content {
-        margin: 40px auto 0 auto;
-        width: 1000px;
-        text-align: justify;
-  
-        ul {
-          margin: 20px 0 20px 0;
-          padding-left: 40px;
+  text-align: center;
+
+  .divider {
+    margin-bottom: 40px;
+  }
+
+  .party-room-img {
+    width: 800px;
+    margin: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .party-room-content {
+    margin: 40px auto 0 auto;
+    width: 1000px;
+    text-align: justify;
+
+    ul {
+      margin: 20px 0 20px 0;
+      padding-left: 40px;
+    }
+  }
+
+  .menu-gallery {
+    border: 5px solid black;
+  }
+
+  .menu-item-title {
+    border-bottom: 2px solid black;
+  }
+
+  .buffet-list {
+    position: relative;
+    left: 24px;
+    line-height: 2;
+    margin: 20px 0;
+  }
+
+  .party-room-prices {
+    width: 720px;
+    margin: 40px auto;
+    text-align: left;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .party-room-item {
+      margin: 20px 0;
+
+      &-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        .dotted-line {
+          border-bottom: 2px #000 dotted;
+          flex-grow: 1;
+          margin: 0 10px;
+          position: relative;
+          bottom: 8px;
         }
       }
     }
-  
-    @media screen and (max-width: $screen-lg) {
-      #partyroom {
-  
-        .party-room-content {
-          width: 90%;
-        }
-      }
+  }
+}
+
+@media screen and (max-width: $screen-lg) {
+  #partyroom {
+
+    .party-room-content {
+      width: 90%;
     }
+  }
+}
   
-    @media screen and (max-width: $screen-md) {
-      #partyroom {
-  
-        .party-room-img {
-          width: 80%;
-        }
-      }
+@media screen and (max-width: $screen-md) {
+  #partyroom {
+
+    .party-room-img {
+      width: 80%;
     }
+  }
+}

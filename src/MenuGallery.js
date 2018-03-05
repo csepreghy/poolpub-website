@@ -28,12 +28,11 @@ class MenuGallery extends Component {
     super();
   }
 
-  numberOfImages = 6;
   imageUrls = [];
 
   settings = {
     dots: true,
-    arrows: true,
+    arrows: false,
     autoplay: true,
     infinite: true,
     fade: true,
@@ -42,14 +41,12 @@ class MenuGallery extends Component {
     lazyLoad: true,
     pauseOnHover: false,
     swipe: true,
-    adaptiveHeight: false,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    adaptiveHeight: false
   }
 
   componentWillMount() {
-    for (var i = 1; i < this.numberOfImages + 1; i++) {
-      this.imageUrls.push("assets/menu-gallery/menu-gallery-img" + i + ".jpg")
+    for (var i = 1; i < this.props.numberOfImages + 1; i++) {
+      this.imageUrls.push("assets/" + this.props.imgPath + i + ".jpg")
     }
   }
 

@@ -9,7 +9,7 @@ class BackgroundContainer extends Component {
 
   }
 
-  numberOfImages = 15;
+  numberOfImages = 10;
   imageUrls = [];
 
   settings = {
@@ -17,8 +17,8 @@ class BackgroundContainer extends Component {
     arrows: true,
     autoplay: true,
     infinite: true,
-    speed: 6000,
-    autoplaySpeed: 6500,
+    speed: 2000,
+    autoplaySpeed: 4500,
     fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,

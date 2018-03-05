@@ -297,7 +297,8 @@ class Contact extends Component {
             <ul className="left-list">
               <li>{ TEXT.contact.address.title[this.props.lang] }</li>
               <li>{ TEXT.contact.phone.title[this.props.lang] }</li>
-              <li>{ TEXT.contact.email.title[this.props.lang] }</li>
+              <li>{ TEXT.bookATable[this.props.lang] }:</li>
+              <li>{ TEXT.bookAnEvent[this.props.lang] }:</li>
               <li>{ TEXT.contact.facebook.title[this.props.lang] }</li>
               <li>{ TEXT.contact.instagram.title[this.props.lang] }</li>
             </ul>
@@ -305,6 +306,7 @@ class Contact extends Component {
               <li>{ TEXT.contact.address.content[this.props.lang] }</li>
               <li>{ TEXT.contact.phone.content[this.props.lang] }</li>
               <li><a href="mailto:info@poolpub.dk?Subject=Hello!">info@poolpub.dk</a></li>
+              <li><a href="mailto:poolpub@poolpub.dk?Subject=Hello!">poolpub@poolpub.dk</a></li>
               <li><a href="https://www.facebook.com/POOL-PUB-Copenhagen-104637576234219/" target="_blank">{ TEXT.contact.facebook.content[this.props.lang] }</a></li>
               <li><a href="https://www.instagram.com/poolpub_cph/" target="_blank">{ TEXT.contact.instagram.content[this.props.lang] }</a></li>
             </ul>
