@@ -54,6 +54,12 @@ class Prices extends Component {
                    frameClass={ 'frame-3' } 
                    price={ '650kr' } />
         </div>
+        <div className="birthday-container">
+          <Package packageLabels={ TEXT.prices.packageBirthday }
+                   lang={ this.props.lang }
+                   frameClass={ 'frame-4' } 
+                   price={ '550kr' } />
+        </div>
         <div className="menu">
           <h1 className="menu-title">{TEXT.prices.menu.title[this.props.lang]}</h1>
           <img  className="divider" src="assets/divider-white.png" />

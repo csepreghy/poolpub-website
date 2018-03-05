@@ -340,6 +340,32 @@ export const TEXT = {
         dk: '650kr'
       }
     },
+    packageBirthday: {
+      title: {
+        en: 'Birthday Package',
+        dk: 'Fødselsdagsfest Package'
+      },
+      list: {
+        en: [
+          '1 Beer Tower',
+          '2 Bag of Chips',
+          '2 Hours of Pool',
+          '1 Nachos',
+          '4 Cocktails'
+        ],
+        dk: [
+          '1 Øl Tårn',
+          '2 Skåle Chips',
+          '2 Timers Pool',
+          '1 Nachos',
+          '4 Cocktails'
+        ]
+      },
+      price: {
+        en: '650kr',
+        dk: '650kr'
+      }
+    },
     menu: {
       title: {
         en: 'Menu',
@@ -556,7 +582,7 @@ export const TEXT = {
     dk: 'Lokalet'
   },
   serveringsfad: {
-    en: '',
+    en: 'Serveringsfad',
     dk: 'Serveringsfad'
   },
   vinglas: {
@@ -588,7 +614,7 @@ export const TEXT = {
     dk: 'Dug'
   },
   friIs: {
-    en: '',
+    en: 'Free ice',
     dk: 'Fri Is'
   },
   perSet: {
@@ -604,7 +630,7 @@ export const TEXT = {
     dk: 'Aktiviter'
   },
   allDayPool: {
-    en: '',
+    en: 'Pool table available throughout the day',
     dk: 'Et pool bord til rådighed hele dagen'
   },
   beerpongBoard: {
@@ -616,51 +642,51 @@ export const TEXT = {
     dk: 'Drikkevarer'
   },
   sodavand: {
-    en: '',
+    en: '1 ks. Øl / Sodavand',
     dk: '1 ks. Øl / Sodavand'
   },
   sodavandExtras: {
-    en: '',
+    en: 'V. køb af 3 kasser eller mere 450 kr pr. ks.',
     dk: 'V. køb af 3 kasser eller mere 450 kr pr. ks.'
   },
   fustage: {
-    en: '',
+    en: '1 Fustage 10l',
     dk: '1 Fustage 10l.'
   },
   sprut: {
-    en: '',
+    en: '1 bottle of spirit',
     dk: '1 fl. Sprut'
   },
   sprutExtras: {
-    en: '',
+    en: 'v køb af 3 fl. 400 pr. fl. + 2 ekstra sodavand pr. fl.',
     dk: 'v køb af 3 fl. 400 pr. fl. + 2 ekstra sodavand pr. fl.'
   },
   luxSprut: {
-    en: '',
+    en: '1 fl. Lux Sprut',
     dk: '1 fl. Lux Sprut'
   },
   luxSprutExtras: {
-    en: '',
+    en: 'v køb af 3 fl. 500 pr. fl. + 2 ekstra sodavand pr fl.',
     dk: 'v køb af 3 fl. 500 pr. fl. + 2 ekstra sodavand pr fl.'
   },
   shots: {
-    en: '',
+    en: '1 bottle of shots',
     dk: '1 fl. Shots'
   },
   shotsExtras: {
-    en: '',
+    en: 'v køb af 3 fl. 300 pr. fl.',
     dk: 'v køb af 3 fl. 300 pr. fl.'
   },
   redWine: {
-    en: 'Red Wine',
-    dk: 'Rødvin'
+    en: '1 bottle of Red Wine',
+    dk: '1 fl. Rødvin'
   },
   whiteWine: {
-    en: '1 ',
-    dk: '1 fl. White Wine'
+    en: '1 bottle of White Wine',
+    dk: '1 fl. Hvidvin'
   },
   kaffe: {
-    en: '',
+    en: '1 cup of coffee',
     dk: '1 Kande Kaffe'
   },
   cookies: {
@@ -674,5 +700,9 @@ export const TEXT = {
   bookATable: {
     en: 'Book a table at ',
     dk: 'Book a table at '
+  },
+  birthdayTitle: {
+    en: 'Birthday package',
+    dk: 'Fødselsdagsfest Package'
   }
 }

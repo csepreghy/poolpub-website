@@ -56,7 +56,7 @@
 
   .frame-1 {
     height: 310px;
-    background: url('/assets/frame-1-2.png');
+    background: url('/assets/frame-1.png');
   }
 
   .frame-2 {
@@ -83,6 +83,34 @@
     ul {
       line-height: 2;
       list-style: none;
+    }
+  }
+}
+
+.birthday-container {
+  margin-top: 40px;
+
+  .frame-4 {
+    margin: auto;
+    height: 420px;
+    width: 320px;
+    background: url('/assets/frame-3.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    ul {
+      list-style: none;
+      font-size: 22px;
+      line-height: 1.8;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
     }
   }
 }
@@ -284,6 +312,7 @@
 
       img {
         width: 100%;
+        height: auto;
       }
 
       .slick-arrow {
@@ -328,6 +357,8 @@
 @media screen and (max-width: $screen-sm) {
   .menu {
     .menu-gallery {
+      width: 95%;
+
       .slick-arrow {
         width: 25px;
         height: 30px;
@@ -339,6 +370,38 @@
 
       .slick-prev {
         left: -55px;
+      }
+    }
+
+    .snack-item {
+      h2 {
+        font-size: 30px;
+      }
+    }
+
+    .inline-list-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: left;
+      margin-top: 25px;
+
+      h2 {
+        font-size: 30px;
+      }
+  
+      ul {
+        position: relative;
+        left: 24px;
+        line-height: 2;
+      }
+    }
+  }
+
+  .birthday-container {
+    .frame-4 {
+      h2.package-title {
+        font-size: 26px !important;
       }
     }
   }
@@ -389,6 +452,28 @@
         line-height: 2;
       }
     }
+
+    .birthday-container {
+      .frame-4 {
+        margin: auto;
+        height: 400px;
+        width: 300px;
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        ul {
+          list-style: none;
+          font-size: 22px;
+          line-height: 1.8;
+        }
+    
+        h2 {
+          font-size: 22px !important;
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 }
 
@@ -405,6 +490,15 @@
         li {
           font-size: 16px;
         }
+      }
+    }
+  }
+
+  .birthday-container {
+    .frame-4 {  
+      h2 {
+        font-size: 22px !important;
+        margin-bottom: 10px;
       }
     }
   }

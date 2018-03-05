@@ -81,9 +81,40 @@
   
 @media screen and (max-width: $screen-md) {
   #partyroom {
-
     .party-room-img {
       width: 80%;
+    }
+
+    .menu-gallery {
+      width: 75%;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  #partyroom {
+    .party-room-prices {
+      width: 95%;
+    }
+
+    .menu-gallery {
+      width: 95%;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .buffet-list {
+      width: 90%;
     }
   }
 }
