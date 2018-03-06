@@ -740,7 +740,7 @@ export const TEXT = {
     dk: 'Spil at vælge imellem:'
   },
   fiveMatchPrice: {
-    en: '139kr. per person (over 12, only 125kr. per person)',
-    dk: 'Kun 139kr. pr. mand (over 12 pers 125kr pr. mand)'
+    en: '139kr. per person',
+    dk: 'Kun 139kr. pr. mand'
   }
 }
